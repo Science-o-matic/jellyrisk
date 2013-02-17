@@ -1,1 +1,8 @@
 django==1.4.3
+django-extensions
+django-debug-toolbar
+South
+MySQL-python
+ipython==0.10
+fabric
+gunicorn
