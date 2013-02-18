@@ -30,6 +30,7 @@ def reload_nginx():
 def release():
     pushpull()
     with cd(env['project_path']):
-        run('./manage.py migrate') 
-        run('./manage.py collectstatic') 
+        run('./manage.py migrate')
+	run('sudo supervisorctl restart jellyrisk')
+        run('./manage.py collectstatic')
     reload_nginx()
