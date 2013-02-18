@@ -2,10 +2,11 @@ from fabric.api import *
 
 env.roledefs = {
     'jellyrisk': ['jellyrisk@jellyrisk.com'],
-    'nginx': ['jellyrisk.com']
+    'sudoer': ['jellyrisk.com']
     }
 env.hosts = ['jellyrisk.com']
-env['project_path'] = "~/www/jellyrisk/"
+env['project_path'] = "/home/jellyrisk/www/jellyrisk/"
+env['python_path'] = "/home/jellyrisk/.virtualenvs/jellyrisk/bin/python"
 
 
 @roles('jellyrisk')
@@ -21,16 +22,23 @@ def pushpull():
         run('git pull') 
 
 
-@roles('nginx')
-def reload_nginx():
+@roles('sudoer')
+def reload_app():
+    run('sudo supervisorctl restart jellyrisk')
     run('sudo /etc/init.d/nginx reload') 
 
 
-@roles('jellyrisk')
-def release():
+
+@roles('sudoer')
+def release(migrate=False, static=True):
     pushpull()
     with cd(env['project_path']):
-        run('./manage.py migrate')
-	run('sudo supervisorctl restart jellyrisk')
-        run('./manage.py collectstatic')
-    reload_nginx()
+        if migrate:
+            _run_manage('manage.py migrate')
+        if static:
+            _run_manage('manage.py collectstatic')
+    reload_app()
+
+
+def _run_manage(command):
+    run("%s %s" % (env['python_path'], command))
