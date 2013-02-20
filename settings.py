@@ -127,3 +127,8 @@ INSTALLED_APPS = (
     'cms.plugins.googlemap',
     'sekizai',
 )
+
+try:
+    import local_settings
+except ImportError:
+    pass
