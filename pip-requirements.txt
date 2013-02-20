@@ -7,3 +7,5 @@ ipython==0.10
 fabric
 gunicorn
 django-cms
+PIL
+setuptools
