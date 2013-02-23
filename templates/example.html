@@ -1,4 +1,4 @@
-{% load cms_tags sekizai_tags %}
+{% load cms_tags sekizai_tags  menu_tags %}
 <!doctype html>
 <head>
   <title>{{ request.current_page.get_title }}</title>
@@ -6,8 +6,9 @@
 </head>
 
 <body>
+{% show_menu %}
 {% cms_toolbar %}
-    {% placeholder "main" %}
+{% placeholder "main" %}
 {% render_block "js" %}
 </body>
 </html>
