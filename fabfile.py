@@ -1,4 +1,7 @@
+import os
 from fabric.api import *
+
+LOCAL_USER = env.user
 
 env.roledefs = {
     'jellyrisk': ['jellyrisk@jellyrisk.com'],
@@ -24,16 +27,16 @@ def pushpull():
 
 @roles('sudoer')
 def reload_app():
-    run('sudo supervisorctl restart jellyrisk')
-    run('sudo /etc/init.d/nginx reload') 
-
+    sudo('supervisorctl restart jellyrisk')
+    sudo('service nginx reload') 
 
 
 @roles('sudoer')
 def release(migrate=False, static=True):
-    pushpull()
+    with settings(user='jellyrisk'):
+        pushpull()
     with cd(env['project_path']):
-        if migrate:
+        if migrate:            
             _run_manage('manage.py migrate')
         if static:
             _run_manage('manage.py collectstatic')
