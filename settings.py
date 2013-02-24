@@ -82,6 +82,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'cms.middleware.multilingual.MultilingualURLMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
@@ -99,6 +100,13 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 CMS_TEMPLATES = (
     ('home.html', 'Home Template'),
+)
+
+# i18n and l10n
+CMS_HIDE_UNTRANSLATED = True
+LANGUAGES = (
+    ('es', gettext('Spanish')),
+    ('en', gettext('English')),
 )
 
 ROOT_URLCONF = 'urls'
