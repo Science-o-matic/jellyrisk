@@ -134,6 +134,7 @@ INSTALLED_APPS = (
     'cms.plugins.snippet',
     'cms.plugins.googlemap',
     'sekizai',
+    'django_extensions',
 )
 
 try:
