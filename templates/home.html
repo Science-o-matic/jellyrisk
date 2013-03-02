@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="{{ STATIC_URL }}css/normalize.css">
   <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css">
   <script src="{{ STATIC_URL }}js/vendor/modernizr-2.6.2.min.js"></script>
+
+  <link rel="shortcut icon" type="image/x-icon" src="{{ STATIC_URL }}img/favicon.ico" />
 </head>
 
 <body>
@@ -25,16 +27,29 @@
 
 {% cms_toolbar %}
 
-{% language_chooser %}
-
-{% show_menu %}
-
-{% placeholder "header" %}
-
-{% placeholder "news" %} 
-
-{% placeholder "footer" %}
-
+<div id="wrapper">
+    {% language_chooser %}
+    <div id="top">
+      <div id="header_image">
+        {% placeholder "header_image" %}
+      </div>
+      <div id="dynamic_menu">
+        {% show_menu %}
+      </div>
+    </div>
+    <div id="content">
+      <div id="banner">
+      </div>
+      <div id="news">
+        {% placeholder "news" %} 
+      </div>
+      <div id="events">
+      </div>
+    </div>
+    <div id="footer">
+    {% placeholder "footer" %}
+    </div>
+</div>
 {% render_block "js" %}
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
