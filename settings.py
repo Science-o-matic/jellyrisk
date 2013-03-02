@@ -100,6 +100,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 CMS_TEMPLATES = (
     ('home.html', 'Home Template'),
+    ('page.html', 'Page Template'),
 )
 
 # i18n and l10n
