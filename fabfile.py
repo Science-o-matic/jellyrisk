@@ -73,5 +73,6 @@ def _run_manage(command):
 
 
 def _dump_cms_data(file_path):
-    plugins = ('text', 'picture', 'link', 'file', 'snippet', 'googlemap',)
+    plugins = ('text', 'picture', 'link', 'file', 'snippet', 'googlemap',
+               'cmsplugin_embeddedpages')
     return 'dumpdata cms %s > %s' % (' '.join(plugins), file_path)

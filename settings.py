@@ -136,6 +136,7 @@ INSTALLED_APPS = (
     'cms.plugins.googlemap',
     'sekizai',
     'django_extensions',
+    'cmsplugin_embeddedpages',
 )
 
 try:
