@@ -1,5 +1,7 @@
 import os
 from fabric.api import *
+from fabric.operations import get, put
+from fabric.contrib.console import confirm
 
 LOCAL_USER = env.user
 
@@ -37,11 +39,39 @@ def release(migrate=False, static=True):
         pushpull()
     with cd(env['project_path']):
         if migrate:            
-            _run_manage('manage.py migrate')
+            _run_manage('migrate')
         if static:
-            _run_manage('manage.py collectstatic')
+            _run_manage('collectstatic')
     reload_app()
 
 
+@roles('jellyrisk')
+def pull_db():
+    with cd(env['project_path']):
+        filename = 'dump_data.json'
+        dump_file = os.path.join(env['project_path'], filename)
+        _run_manage('%s' % _dump_cms_data(dump_file))
+        get(dump_file, '.')
+        run('rm %s' % dump_file)
+        if confirm("Load dumped remote data into local DB?"):
+            local('./manage.py loaddata %s' % filename)
+            
+
+@roles('jellyrisk')
+def push_db():
+    local_file = 'dump_data.json'
+    remote_file = os.path.join(env['project_path'], local_file)
+    local('./manage.py %s' % _dump_cms_data(local_file))
+    put(local_file, remote_file)
+    if confirm("Load dumped local data into remote DB?"):
+        with cd(env['project_path']):        
+            _run_manage('loaddata %s' % remote_file)
+
+
 def _run_manage(command):
-    run("%s %s" % (env['python_path'], command))
+    run("%s ./manage.py %s" % (env['python_path'], command))
+
+
+def _dump_cms_data(file_path):
+    plugins = ('text', 'picture', 'link', 'file', 'snippet', 'googlemap',)
+    return 'dumpdata cms %s > %s' % (' '.join(plugins), file_path)
