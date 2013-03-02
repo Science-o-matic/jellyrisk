@@ -25,26 +25,28 @@
 
 {% cms_toolbar %}
 
-{% language_chooser %}
-  <div id="top">
-    <div id="random_image">
+<div id="content">
+    {% language_chooser %}
+    <div id="top">
+      <div id="random_image">
+        {% placeholder "header" %}
+      </div>
+      <div id="dynamic_menu">
+        {% show_menu %}
+      </div>
+    <div id="center">
+      <div id="left">
+      </div>
+      <div id="medium">
+        {% placeholder "news" %} 
+      </div>
+      <div id="right">
+      </div>
     </div>
-    <div id="dynamic_menu">
-{% show_menu %}
+    <div id="footer">
+    {% placeholder "footer" %}
     </div>
-{% placeholder "header" %}
-  <div id="center">
-    <div id="left">
-    </div>
-    <div id="medium">
-{% placeholder "news" %} 
-    </div>
-    <div id="right">
-    </div>
-  </div>
-  <div id="footer">
-{% placeholder "footer" %}
-  </div>
+</div>
 {% render_block "js" %}
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
