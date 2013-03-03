@@ -1,0 +1,10 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+#wrapper {
+  width: 70%;
+  margin: 0 auto;
+  background-color: grey;
+}
