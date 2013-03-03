@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags %}
+
+{% block base_content %}
+    <div id="page_header">
+      {% language_chooser %}
+      {% placeholder "header_image" %}
+    </div>
+    <div id="breacrumbs">
+      {% show_breadcrumb %}
+    </div>
+    <div id="page_wrapper">
+      <div id="base_content">
+        {% placeholder base_content %}
+      </div>
+      <div id="dynamic_menu">
+        {% show_menu %}
+      </div>
+    </div>
+{% endblock %}
