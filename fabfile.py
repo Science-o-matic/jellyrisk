@@ -12,6 +12,7 @@ env.roledefs = {
 env.hosts = ['jellyrisk.com']
 env['project_path'] = "/home/jellyrisk/www/jellyrisk/"
 env['python_path'] = "/home/jellyrisk/.virtualenvs/jellyrisk/bin/python"
+env['pip_path'] = "/home/jellyrisk/.virtualenvs/jellyrisk/bin/pip"
 
 
 @roles('jellyrisk')
@@ -37,12 +38,20 @@ def reload_app():
 def release(migrate=False, static=True):
     with settings(user='jellyrisk'):
         pushpull()
+        run('%s install -r %spip-requirements.txt' % 
+            (env['pip_path'], env['project_path']))
     with cd(env['project_path']):
-        if migrate:            
-            _run_manage('migrate')
+        if migrate:
+            migrate()
         if static:
             _run_manage('collectstatic')
     reload_app()
+
+
+@roles('jellyrisk')
+def migrate():
+    with cd(env['project_path']):
+        _run_manage('migrate')
 
 
 @roles('jellyrisk')
@@ -75,4 +84,4 @@ def _run_manage(command):
 def _dump_cms_data(file_path):
     plugins = ('text', 'picture', 'link', 'file', 'snippet', 'googlemap',
                'cmsplugin_embeddedpages')
-    return 'dumpdata cms %s > %s' % (' '.join(plugins), file_path)
+    return 'dumpdata cms %s --natural > %s' % (' '.join(plugins), file_path)
