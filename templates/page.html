@@ -10,9 +10,11 @@
       {% show_breadcrumb %}
     </div>
     <div id="page_wrapper">
-      <div id="base_content">
+      {% block page_content %}
+      <div id="page_content">
         {% placeholder base_content %}
       </div>
+      {% endblock %}
       <div id="dynamic_menu">
         {% show_menu %}
       </div>

@@ -1,8 +1,13 @@
 {% extends "base.html" %}
-{% load cms_tags menu_tags %}
+{% load cms_tags menu_tags sekizai_tags %}
 
 {% block base_content %}
+    {% addtoblock "css" %}
+      <link rel="stylesheet" href="{{ STATIC_URL }}css/home.css">
+    {% endaddtoblock %}
+
     {% language_chooser %}
+
     <div id="top">
       <div id="header_image">
         {% placeholder "header_image" %}
