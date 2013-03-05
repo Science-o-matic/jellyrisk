@@ -12,7 +12,9 @@
         {% placeholder "header_image" %}
       </div>
       <div id="dynamic_menu">
-        {% show_menu  %}
+        <ul id="nav">
+          {% show_menu 0 100 100 100 %}
+        </ul>
       </div>
     </div>
     <div id="content">
