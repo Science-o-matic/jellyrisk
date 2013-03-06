@@ -138,6 +138,8 @@ INSTALLED_APPS = (
     'sekizai',
     'django_extensions',
     'cmsplugin_embeddedpages',
+    'filer',
+    'easy_thumbnails'
 )
 
 try:

@@ -10,3 +10,4 @@ django-cms
 PIL
 setuptools
 cmsplugin-embedded-pages
+django-filer
