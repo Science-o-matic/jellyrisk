@@ -3,3 +3,4 @@
 *.pyc
 local_settings.py
 *~
+cms_page_media/
