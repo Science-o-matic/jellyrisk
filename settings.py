@@ -139,7 +139,8 @@ INSTALLED_APPS = (
     'django_extensions',
     'cmsplugin_embeddedpages',
     'filer',
-    'easy_thumbnails'
+    'easy_thumbnails',
+    'cmsplugin_contact'
 )
 
 try:

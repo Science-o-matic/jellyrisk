@@ -11,3 +11,5 @@ PIL
 setuptools
 cmsplugin-embedded-pages
 django-filer
+recaptcha-client
+cmsplugin-contact
