@@ -1,6 +1,6 @@
 *.log
 *.pot
 *.pyc
-local_settings.py
+local\_settings.py
 *~
 cms_page_media/
