@@ -3,8 +3,6 @@ from fabric.api import *
 from fabric.operations import get, put
 from fabric.contrib.console import confirm
 
-LOCAL_USER = env.user
-
 env.roledefs = {
     'jellyrisk': ['jellyrisk@jellyrisk.com'],
     'sudoer': ['jellyrisk.com']
