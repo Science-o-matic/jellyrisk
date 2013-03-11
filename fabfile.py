@@ -35,13 +35,13 @@ def reloadapp():
 
 
 @roles('sudoer')
-def release(migrate=True, static=True):
+def release(run_migrate=True, static=True):
     with settings(user='jellyrisk'):
         pushpull()
         run('%s install -r %spip-requirements.txt' % 
             (env['pip_path'], env['project_path']))
     with cd(env['project_path']):
-        if migrate:
+        if run_migrate:
             migrate()
         if static:
             _run_manage('collectstatic')
