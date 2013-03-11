@@ -30,8 +30,8 @@ def pushpull():
 
 @roles('sudoer')
 def reload_app():
-    sudo('supervisorctl restart jellyrisk')
-    sudo('service nginx reload') 
+    sudo('supervisorctl restart jellyrisk', shell=False)
+    sudo('service nginx reload', shell=False) 
 
 
 @roles('sudoer')
