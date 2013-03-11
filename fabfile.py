@@ -35,7 +35,7 @@ def reload_app():
 
 
 @roles('sudoer')
-def release(migrate=False, static=True):
+def release(migrate=True, static=True):
     with settings(user='jellyrisk'):
         pushpull()
         run('%s install -r %spip-requirements.txt' % 
