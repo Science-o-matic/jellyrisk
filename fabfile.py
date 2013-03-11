@@ -2,10 +2,12 @@ import os
 from fabric.api import *
 from fabric.operations import get, put
 from fabric.contrib.console import confirm
+from fab_settings import SUDOER_USER
+
 
 env.roledefs = {
     'jellyrisk': ['jellyrisk@jellyrisk.com'],
-    'sudoer': ['jellyrisk.com']
+    'sudoer': ['%s@jellyrisk.com' % SUDOER_USER]
     }
 env.hosts = ['jellyrisk.com']
 env['project_path'] = "/home/jellyrisk/www/jellyrisk/"
