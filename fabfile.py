@@ -29,7 +29,7 @@ def pushpull():
 
 
 @roles('sudoer')
-def reload_app():
+def reloadapp():
     sudo('supervisorctl restart jellyrisk', shell=False)
     sudo('service nginx reload', shell=False) 
 
@@ -45,7 +45,7 @@ def release(migrate=True, static=True):
             migrate()
         if static:
             _run_manage('collectstatic')
-    reload_app()
+    reloadapp()
 
 
 @roles('jellyrisk')
@@ -55,7 +55,7 @@ def migrate():
 
 
 @roles('jellyrisk')
-def pull_db():
+def pulldb():
     with cd(env['project_path']):
         filename = 'dump_data.json'
         dump_file = os.path.join(env['project_path'], filename)
@@ -67,7 +67,7 @@ def pull_db():
             
 
 @roles('jellyrisk')
-def push_db():
+def pushdb():
     local_file = 'dump_data.json'
     remote_file = os.path.join(env['project_path'], local_file)
     local('./manage.py %s' % _dump_cms_data(local_file))
