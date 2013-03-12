@@ -51,7 +51,7 @@ USE_L10N = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = '/var/www/jellyrisk/media/'
 
 STATIC_ROOT = '/var/www/jellyrisk/static/'
 
