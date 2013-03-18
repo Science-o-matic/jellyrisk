@@ -70,6 +70,10 @@ STATICFILES_DIRS = (
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '0r6%7gip5tmez*vygfv+u14h@4lbt^8e2^26o#5_f_#b7%cm)u'
 
+TEMPLATE_DIRS = (
+    os.path.join(PROJECT_DIR, 'templates'),
+)
+
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
@@ -113,10 +117,6 @@ LANGUAGES = (
 
 ROOT_URLCONF = 'urls'
 
-TEMPLATE_DIRS = (
-    os.path.join(PROJECT_DIR, 'templates'),
-)
-
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -140,7 +140,7 @@ INSTALLED_APPS = (
     'cmsplugin_embeddedpages',
     'filer',
     'easy_thumbnails',
-    'cmsplugin_contact'
+    'cmsplugin_contact',
 )
 
 try:

@@ -9,7 +9,7 @@ gunicorn
 django-cms
 PIL
 setuptools
-cmsplugin-embedded-pages
+git+https://github.com/ygneo/cmsplugin-embedded-pages.git
 django-filer
 recaptcha-client
 cmsplugin-contact
