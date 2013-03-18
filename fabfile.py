@@ -24,8 +24,9 @@ def git_status():
 @roles('jellyrisk')
 def pushpull():
     local("git push origin master")
-    with cd(env['project_path']):
-        run('git pull') 
+    with settings(user='jellyrisk'):
+        with cd(env['project_path']):
+            run('git pull') 
 
 
 @roles('sudoer')
