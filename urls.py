@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^favicon\.ico$', 'django.views.generic.simple.redirect_to',
         {'url': settings.STATIC_URL + 'img/favicon.ico'}),
+    url(r'^gallery/', include('imagestore.urls', namespace='imagestore')),
     url(r'^', include('cms.urls')),
 )
 

@@ -141,6 +141,8 @@ INSTALLED_APPS = (
     'filer',
     'easy_thumbnails',
     'cmsplugin_contact',
+    'sorl.thumbnail',
+    'tagging',
 )
 
 try:
