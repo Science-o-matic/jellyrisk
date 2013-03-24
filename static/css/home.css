@@ -1,0 +1,26 @@
+#header_image {
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#top {
+  height: 298px;
+}
+
+#dynamic_menu {
+    float: right;
+}
+
+#content {
+  left: 0;
+  clear: both;
+}
+
+#project_description_news {
+  float: left:
+}
+
+#tools {
+  float: right;
+}
