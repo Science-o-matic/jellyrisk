@@ -115,6 +115,8 @@ LANGUAGES = (
     ('en', gettext('English')),
 )
 
+IMAGESTORE_SHOW_USER = False
+
 ROOT_URLCONF = 'urls'
 
 INSTALLED_APPS = (
@@ -139,10 +141,11 @@ INSTALLED_APPS = (
     'django_extensions',
     'cmsplugin_embeddedpages',
     'filer',
-    'easy_thumbnails',
     'cmsplugin_contact',
+    'imagestore',
     'sorl.thumbnail',
     'tagging',
+    'imagestore.imagestore_cms'
 )
 
 try:
