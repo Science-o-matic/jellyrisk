@@ -26,7 +26,8 @@
         }
 
         #dynamic_menu ul li.selected a { 
-           background: url('img/medusa-peine.png') no-repeat left;
+           background: url('../img/medusa-indicador.png') no-repeat;
+           background-position: right;
         }
 
 
