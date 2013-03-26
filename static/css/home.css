@@ -1,3 +1,8 @@
+body {
+    font-family: Verdana;
+    font-size: normal;
+}
+
 #header_image {
   position: absolute;
   z-index: -1;
@@ -23,11 +28,16 @@
            padding-left: 1ex;
            padding-right: 6ex;
            border-bottom: 1px gray solid;
+           margin-right: 2ex;
+        }
+
+        #dynamic_menu ul li:hover { 
+           background: url('../img/medusa-indicador.png') no-repeat;
+           background-position: right;
         }
 
         #dynamic_menu ul li.selected a { 
-           background: url('../img/medusa-indicador.png') no-repeat;
-           background-position: right;
+
         }
 
 
