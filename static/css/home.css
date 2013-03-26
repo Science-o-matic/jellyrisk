@@ -62,12 +62,26 @@ h2 {
   float: left:
 }
 
+  #news {
+    float: left;
+    width: 60%;
+    color: #8b8b8b;
+  }
+
+  #tools {
+   float: right;
+   width: 40%;
+  }
+     #search {
+         height: 12ex;
+         background-color: ;
+     }
+
+
 #sights_link  {
     width: 676px;
     margin: 0 auto; 
 }
 
-#tools {
-  float: right;
 }
 
