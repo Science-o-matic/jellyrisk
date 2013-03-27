@@ -33,9 +33,10 @@ h2 {
            padding-left: 1ex;
            padding-right: 6ex;
            margin-right: 2ex;
+           border-bottom: thin solid #3bb34a;
         }
 
-        #dynamic_menu ul li:hover { 
+        #dynamic_menu ul li.selected { 
            background: url('../img/medusa-indicador.png') no-repeat;
            background-position: right;
         }
