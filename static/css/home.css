@@ -60,8 +60,19 @@ h2 {
 }
 
 #project_description_news {
+  clear: both;
   float: left:
 }
+
+  #project_description {
+    color: #8b8b8b;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2ex;
+    margin-top: 2ex;
+    border-bottom: thin solid #3bb34a;
+    border-top: solid #3bb34a;
+  }
 
   #news {
     float: left;
@@ -78,11 +89,8 @@ h2 {
          background-color: #01bbd6;
      }
 
-
-#sights_link  {
-    width: 676px;
-    margin: 0 auto; 
+#sights_link {
+  clear: both;
+  width: 676px;
+  margin: 0 auto;
 }
-
-}
-
