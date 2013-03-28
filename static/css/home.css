@@ -80,6 +80,10 @@ h2 {
     color: #8b8b8b;
   }
 
+    .embedded-page {
+      border-bottom: thin solid #3bb34a;
+    }
+
   #tools {
    float: right;
    width: 40%;
