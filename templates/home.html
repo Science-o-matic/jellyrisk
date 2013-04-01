@@ -3,7 +3,8 @@
 
 {% block base_content %}
     {% addtoblock "css" %}
-      <link rel="stylesheet" href="{{ STATIC_URL }}css/home.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/home.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
     {% endaddtoblock %}
 
     <div id="top">
@@ -17,28 +18,29 @@
       </div>
     </div>
     <div id="content">
-      <div id="project_description_news">
-        <div id="project_description">
-          {% placeholder "project_description" %}
-        </div>
+      <div id="project_description">
+        {% placeholder "project_description" %}
+      </div>
+      <div id="news_tools">
         <div id="news">
           {% placeholder "news" %} 
         </div>
-      </div>
-      <div id="tools">
-        <div id="search">
-        </div>
-        <div id="special_news">
-          <div id="special_news_text">
-            {% placeholder "special_news_text" %}
+        <div id="tools">
+          <div id="search">
           </div>
-          <div id="special_news_image">
-            {% placeholder "special_news_image" %}
+          <div id="special_news">
+            <div id="special_news_text">
+              {% placeholder "special_news_text" %}
+            </div>
+            <div id="special_news_image">
+              {% placeholder "special_news_image" %}
+            </div>
           </div>
-        </div>
-        <div id="picture_gallery">
-        </div>
-        <div id="contact">
+          <div id="picture_gallery">
+            {% placeholder "picture_gallery" %}
+          </div>
+          <div id="contact">
+          </div>
         </div>
       </div>
     </div>
