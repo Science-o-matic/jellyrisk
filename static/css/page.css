@@ -1,0 +1,58 @@
+
+#page_wrapper {
+	width:100%;
+	padding:0px;
+	float:right;
+	margin: 0px;
+	text-align: justify;
+	font-family: Verdana;
+		}
+	
+#page_content {
+	width:75%;
+	padding:0px;
+	float:right;
+	background-color: transparent;
+		}
+		
+	#breacrumbs
+{
+    font: 13px Helvetica;
+    background-image:url('../img/bc_bg.png');
+    background-repeat:repeat-x;
+    height:30px;
+    line-height:30px;
+    color:#9b9b9b;
+    border:solid 1px #cacaca;
+    width:100%;
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+    width:25%;
+}
+#breacrumbs li
+{
+    list-style-type:none;
+    float:left;
+    padding-left:10px;
+}
+#breacrumbs a
+{
+    height:30px;
+    display:block;
+    background-image:url('../img/bc_separator.png');
+    background-repeat:no-repeat;
+    background-position:right;
+    padding-right: 15px;
+    text-decoration: none;
+    color:#454545;
+}
+
+#home
+{
+    border: none;
+    margin: 8px 0px;
+}
+#dynamic_menu {
+    float: left;
+}

@@ -1,15 +1,18 @@
+
 {% extends "base.html" %}
 {% load cms_tags menu_tags sekizai_tags %}
 
 {% block base_content %}
     {% addtoblock "css" %}
       <link rel="stylesheet" href="{{ STATIC_URL }}css/page.css">
+      <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
     {% endaddtoblock %}
     <div id="page_header">
       {% language_chooser %}
       {% placeholder "header_image" %}
     </div>
     <div id="breacrumbs">
+    	<li><img src="{{ STATIC_URL }}img/home.png" id="home"/></li>
       {% show_breadcrumb %}
     </div>
     <div id="page_wrapper">
