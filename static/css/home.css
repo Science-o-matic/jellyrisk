@@ -38,6 +38,10 @@
     min-width: 60%;
   }
 
+   .embedded-page.row {
+     margin-bottom: 4ex;
+   }
+
   #tools {
     float: right;
     width: 275px;
