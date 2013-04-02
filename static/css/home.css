@@ -1,13 +1,3 @@
-body {
-    font-family: Verdana;
-    font-size: normal;
-}
-
-h2 {
-    color: #39b54a;
-    font-size: 120%;
-}
-
 #header_image {
   position: absolute;
   z-index: -1;
@@ -18,50 +8,13 @@ h2 {
 }
 
 #dynamic_menu {
-    float: right;
+  float: right;
 }
-
-    #dynamic_menu ul { 
-        list-style: none;
-        font-size: small;
-    }
-
-        #dynamic_menu ul li { 
-           text-align: right;
-           padding-top: 1ex;
-           padding-bottom: 1ex;
-           padding-left: 1ex;
-           padding-right: 6ex;
-           margin-right: 2ex;
-           border-bottom: thin solid #3bb34a;
-        }
-
-        #dynamic_menu ul li.selected { 
-           background: url('../img/medusa-indicador.png') no-repeat;
-           background-position: right;
-        }
-
-        #dynamic_menu ul li a { 
-            color: #4dc5d9;
-            text-decoration: none;
-            font-size: 100%;
-            font-weight: bold;
-        }
-
-        #dynamic_menu ul li a:visited { 
-            color: #4dc5d9;
-        }
-
-
 
 #content {
-  left: 0;
-  clear: both;
-}
-
-#project_description_news {
-  clear: both;
-  float: left:
+  width: 100%;
+  height: 100%;
+  
 }
 
   #project_description {
@@ -75,23 +28,19 @@ h2 {
   }
 
   #news {
-    float: left;
-    width: 60%;
+    padding-right: 280px;
     color: #8b8b8b;
   }
 
-    .embedded-page {
-      border-bottom: thin solid #3bb34a;
-    }
-
   #tools {
-   float: right;
-   width: 40%;
+    float: right;
+    width: 275px;
+    background-color: #01bbd6;
+    
   }
-     #search {
-         height: 8ex;
-         background-color: #01bbd6;
-     }
+    #search {
+      height: 8ex;
+    }
 
 #sights_link {
   clear: both;
