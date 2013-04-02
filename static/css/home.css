@@ -27,9 +27,15 @@
     border-top: solid #3bb34a;
   }
 
+  #news_tools {
+      width: 100%;
+ }
+
   #news {
-    padding-right: 280px;
+    float: left; 
     color: #8b8b8b;
+    width: auto;
+    min-width: 60%;
   }
 
   #tools {
@@ -42,8 +48,13 @@
       height: 8ex;
     }
 
-#sights_link {
-  clear: both;
-  width: 676px;
-  margin: 0 auto;
+  #sights_link {
+    clear: both;
+    width: 676px;
+    margin: 0 auto;
+  }
+
+#footer {
+    margin-top: 2ex;
+    margin-bottom: 2ex;
 }
