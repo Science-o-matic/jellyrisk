@@ -11,9 +11,9 @@ env.roledefs = {
     }
 env.hosts = ['jellyrisk.com']
 env['project_name'] = 'jellyrisk'
-env['project_path'] = "/home/" + env['project_name'] + "/www/env['project_name']/"
-env['python_path'] = "/home/" + env['project_name']+ "/.virtualenvs/env['project_name']/bin/python"
-env['pip_path'] = "/home/" + env['project_name'] + "/.virtualenvs/env['project_name']/bin/pip"
+env['project_path'] = "/home/" + env['project_name'] + "/www/" + env['project_name'] + "/"
+env['python_path'] = "/home/" + env['project_name']+ "/.virtualenvs/" + env['project_name'] + "/bin/python"
+env['pip_path'] = "/home/" + env['project_name'] + "/.virtualenvs/" + env['project_name'] + "/bin/pip"
 
 
 @roles('jellyrisk')
@@ -46,7 +46,7 @@ def release(run_migrate=True, static=True):
         if run_migrate:
             migrate()
         if static:
-            _run_manage('collectstatic')
+            _run_manage('collectstatic --no-input')
     reloadapp()
 
 
