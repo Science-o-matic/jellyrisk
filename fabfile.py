@@ -46,7 +46,7 @@ def release(run_migrate=True, static=True):
         if run_migrate:
             migrate()
         if static:
-            _run_manage('collectstatic --no-input')
+            _run_manage('collectstatic --noinput')
     reloadapp()
 
 
