@@ -26,25 +26,37 @@
   }
 
   #news_tools {
-      width: 100%;
+    overflow: hidden;
+    paddng-right: 275px;
  }
 
   #news {
-    float: left; 
-    color: #8b8b8b;
-    width: auto;
-    min-width: 60%;
+    float: left;
+    width: 70%;
   }
 
-   .embedded-page.row {
+   #news .embedded-page.row {
      margin-bottom: 4ex;
+     float: left;
+     clear: both;
+   }
+   
+   #news span.plugin_picture {
+       display: block;
+       float: left; 
+       margin-right: 1ex;
    }
 
+     #news span.plugin_picture img {
+       height: 140px;
+       width: 120px;
+     }
+
+
   #tools {
-    float: right;
-    width: 275px;
+    float: right; 
+    width: 275px;;
     background-color: #01bbd6;
-    
   }
     #search {
       height: 8ex;
