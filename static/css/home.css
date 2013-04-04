@@ -14,7 +14,6 @@
 #content {
   width: 100%;
   height: 100%;
-  
 }
 
   #project_description {
@@ -24,7 +23,6 @@
     margin-bottom: 2ex;
     margin-top: 2ex;
     border-bottom: thin solid #3bb34a;
-    border-top: solid #3bb34a;
   }
 
   #news_tools {
@@ -50,6 +48,14 @@
   }
     #search {
       height: 8ex;
+    }
+
+    #special_news_image {
+      text-align: right;
+    }
+
+    #picture_gallery {
+      text-align: center;
     }
 
   #sights_link {
