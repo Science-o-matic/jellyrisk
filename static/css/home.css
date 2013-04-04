@@ -52,6 +52,9 @@
        width: 120px;
      }
 
+  #more_news {
+      clear: both;
+  }
 
   #tools {
     float: right; 
