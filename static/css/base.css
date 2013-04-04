@@ -33,6 +33,10 @@ h2 {
       background-position: right;
     }
 
+    #dynamic_menu ul li.selected a {
+      font-weight: bold;
+    }
+
   #dynamic_menu ul li a {
     color: #4dc5d9;
     text-decoration: none;
