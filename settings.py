@@ -118,6 +118,25 @@ LANGUAGES = (
 
 IMAGESTORE_SHOW_USER = False
 
+CMS_PLACEHOLDER_CONF = {
+    'new-image-1': {
+        'plugins': ['PicturePlugin'],
+        'name':gettext("New #1 Picture"),
+    },
+    'new-text-1': {
+        'plugins': ['TextPlugin'],
+        'name':gettext("New #1 Text"),
+    },
+    'new-image-2': {
+        'plugins': ['PicturePlugin'],
+        'name':gettext("New #2 Picture"),
+    },
+    'new-text-2': {
+        'plugins': ['TextPlugin'],
+        'name':gettext("New #2 Text"),
+    },
+}
+
 ROOT_URLCONF = 'urls'
 
 INSTALLED_APPS = (
