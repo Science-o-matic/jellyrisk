@@ -35,6 +35,22 @@
     width: 70%;
   }
 
+   #news a.read_more {  
+      clear: both;
+   }
+
+   #news .plugin_picture { 
+      float: left;                      
+  }
+
+   #news h2 { 
+      float: left;                      
+  }
+   #news p { 
+      float: left;                      
+  }
+
+
    #news .embedded-page.row {
      margin-bottom: 4ex;
      float: left;
