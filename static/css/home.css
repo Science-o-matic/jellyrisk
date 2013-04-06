@@ -1,12 +1,19 @@
+body { 
+    color: #8b8b8b;
+}
+
+#left { float: left; width: 718px; }
+
+#right { 
+     float: right; 
+     width: 260px; 
+     background-color: #9de4ef;
+}
+
 #top {
   height: 304px;
   width: 100%;
 }
-
-  #header_image_project_desciption {
-    float: left;
-    width: 718px;
-  }
 
     #project_description {
       color: #565555;
@@ -14,11 +21,6 @@
       text-align: left;
     }
   
-  #dynamic_menu {
-    float: right;
-    width: 260px;
-  }
-
     #dynamic_menu ul#nav {
       margin-top: 5px;
       padding-left: 5px;
@@ -31,10 +33,6 @@
     #dynamic_menu ul li.sibling {
       margin-right: 0;
     }
-
-body { 
-    color: #8b8b8b;
-}
 
 #content {
   width: 100%;
@@ -92,7 +90,6 @@ body {
   #tools {
     float: right; 
     width: 260px;;
-    background-color: #9de4ef;
     border-radius: 20px;
   }
 
@@ -116,6 +113,6 @@ body {
   }
 
 #footer {
-    margin-top: 2ex;
+    margin-top: 1ex;
     margin-bottom: 2ex;
 }

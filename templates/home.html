@@ -7,59 +7,61 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
     {% endaddtoblock %}
 
-    <div id="top">
-      <div id="header_image_project_desciption">
-        <div id="header_image">
-          {% placeholder "header_image" %}
-        </div>
-        <div id="project_description">
-          {% placeholder "project_description" %}
+    <div id="left">
+      <div id="header_image">
+        {% placeholder "header_image" %}
+      </div>
+      <div id="project_description">
+        {% placeholder "project_description" %}
+      </div>
+      <div id="content">
+        <div id="news_tools">
+          <div id="news">
+            <div class="new">
+              {% placeholder "new-image-1" %}
+            <div class="new_text">
+              {% placeholder "new-text-1" %}
+              <a class="read_more" href="news/new-1">{% trans "Read more" %}</a>
+            </div>
+            </div>
+            <div class="new">
+              {% placeholder "new-image-2" %}
+              <div class="new_text">
+                {% placeholder "new-text-2" %}
+                <a class="read_more" href="news/new-2">{% trans "Read more" %}</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div id="right">
       <div id="dynamic_menu">
         <ul id="nav">
           {% show_menu 0 100 100 100 %}
         </ul>
       </div>
-    </div>
-    <div id="content">
-      <div id="news_tools">
-        <div id="news">
-          <div class="new">
-            {% placeholder "new-image-1" %}
-            <div class="new_text">
-              {% placeholder "new-text-1" %}
-              <a class="read_more" href="news/new-1">{% trans "Read more" %}</a>
-            </div>
+      <div id="tools">
+        <div id="search">
+        </div>
+        <div id="special_news">
+          <div id="special_news_text">
+            {% placeholder "special_news_text" %}
           </div>
-          <div class="new">
-            {% placeholder "new-image-2" %}
-            <div class="new_text">
-             {% placeholder "new-text-2" %}
-              <a class="read_more" href="news/new-2">{% trans "Read more" %}</a>
-            </div>
+          <div id="special_news_image">
+            {% placeholder "special_news_image" %}
           </div>
         </div>
-        <div id="tools">
-          <div id="search">
-          </div>
-          <div id="special_news">
-            <div id="special_news_text">
-              {% placeholder "special_news_text" %}
-            </div>
-            <div id="special_news_image">
-              {% placeholder "special_news_image" %}
-            </div>
-          </div>
-          <div id="picture_gallery">
-            {% placeholder "picture_gallery" %}
-          </div>
-          <div id="contact">
-          </div>
+        <div id="picture_gallery">
+          {% placeholder "picture_gallery" %}
+        </div>
+        <div id="contact">
         </div>
       </div>
     </div>
+
     <div id="sights_link">
-      {% placeholder "sights_link" %}
-    </div>
+        {% placeholder "sights_link" %}
+      </div>
 {% endblock %}
