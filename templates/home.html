@@ -23,10 +23,20 @@
       </div>
       <div id="news_tools">
         <div id="news">
-          {% placeholder "new-1" %}
-          <a href="">{% trans "Read more.." %}</a>
-          {% placeholder "new-2" %}
-          <a href="">{% trans "Read more.." %}</a>
+          <div class="new">
+            {% placeholder "new-image-1" %}
+            <div class="new_text">
+              {% placeholder "new-text-1" %}
+              <a class="read_more" href="">{% trans "Read more" %}</a>
+            </div>
+          </div>
+          <div class="new">
+            {% placeholder "new-image-2" %}
+            <div class="new_text">
+             {% placeholder "new-text-2" %}
+              <a class="read_more" href="">{% trans "Read more" %}</a>
+            </div>
+          </div>
         </div>
         <div id="tools">
           <div id="search">
