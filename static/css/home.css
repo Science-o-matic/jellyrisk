@@ -116,12 +116,10 @@ body {
       float: right;
     }
 
-    #special_news
-
-    #picture_gallery {
-      text-align: center;
+  #picture_gallery { 
       clear: both;
-    }
+      text-align: center;
+  }
 
   #sights_link {
     clear: both;
