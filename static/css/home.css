@@ -103,7 +103,7 @@ body {
       color: white;
       border-radius: 4px;
       height: 170px;
-      padding: 4px;
+      padding: 6px;
     }
 
     #special_news p { 
@@ -114,6 +114,12 @@ body {
       float: left;
       width: 110px;
       font-size: 80%;
+    }
+
+    #special_news_text .plugin_link a {
+      margin-top: 1ex;
+      color: white;
+      font-weight: bold;
     }
 
     #special_news_image {
