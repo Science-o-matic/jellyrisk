@@ -42,3 +42,8 @@ h2 {
     #dynamic_menu ul li a:visited {
       color: #4dc5d9;
     }
+
+#disclaimer{
+  margin-top: 5px;
+  font-size: smaller;
+}
