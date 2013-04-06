@@ -106,6 +106,7 @@ CMS_TEMPLATES = (
     ('home.html', 'Home Template'),
     ('page.html', 'Page Template'),
     ('map_page.html', 'Map Page Template'),
+    ('new.html', 'Single News Template'),
 )
 
 # i18n and l10n

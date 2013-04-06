@@ -3,12 +3,12 @@
 
 {% block base_content %}
     {% addtoblock "css" %}
-      <link rel="stylesheet" href="{{ STATIC_URL }}css/home.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/home.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
     {% endaddtoblock %}
 
     <div id="top">
       <div id="header_image">
-        {% language_chooser %}
         {% placeholder "header_image" %}
       </div>
       <div id="dynamic_menu">
@@ -18,15 +18,30 @@
       </div>
     </div>
     <div id="content">
-      <div id="banner">
-      </div>
       <div id="project_description">
         {% placeholder "project_description" %}
       </div>
-      <div id="news">
-        {% placeholder "news" %} 
-      </div>
-      <div id="tools">
+      <div id="news_tools">
+        <div id="news">
+          {% placeholder "news" %} 
+        </div>
+        <div id="tools">
+          <div id="search">
+          </div>
+          <div id="special_news">
+            <div id="special_news_text">
+              {% placeholder "special_news_text" %}
+            </div>
+            <div id="special_news_image">
+              {% placeholder "special_news_image" %}
+            </div>
+          </div>
+          <div id="picture_gallery">
+            {% placeholder "picture_gallery" %}
+          </div>
+          <div id="contact">
+          </div>
+        </div>
       </div>
     </div>
     <div id="sights_link">

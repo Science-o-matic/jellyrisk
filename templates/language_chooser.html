@@ -1,0 +1,4 @@
+{% load menu_tags cms_tags i18n %}
+{% for language in languages %}
+<a href="{% page_language_url language.0 %}"{% ifequal lang language.0 %} class="current"{% endifequal %}><img src="{{ STATIC_URL }}img/{{ language.0 }}.png" /></a>
+{% endfor %}

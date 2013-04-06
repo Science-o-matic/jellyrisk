@@ -10,9 +10,10 @@ env.roledefs = {
     'sudoer': ['%s@jellyrisk.com' % SUDOER_USER]
     }
 env.hosts = ['jellyrisk.com']
-env['project_path'] = "/home/jellyrisk/www/jellyrisk/"
-env['python_path'] = "/home/jellyrisk/.virtualenvs/jellyrisk/bin/python"
-env['pip_path'] = "/home/jellyrisk/.virtualenvs/jellyrisk/bin/pip"
+env['project_name'] = 'jellyrisk'
+env['project_path'] = "/home/" + env['project_name'] + "/www/" + env['project_name'] + "/"
+env['python_path'] = "/home/" + env['project_name']+ "/.virtualenvs/" + env['project_name'] + "/bin/python"
+env['pip_path'] = "/home/" + env['project_name'] + "/.virtualenvs/" + env['project_name'] + "/bin/pip"
 
 
 @roles('jellyrisk')
@@ -45,7 +46,7 @@ def release(run_migrate=True, static=True):
         if run_migrate:
             migrate()
         if static:
-            _run_manage('collectstatic')
+            _run_manage('collectstatic --noinput')
     reloadapp()
 
 
@@ -57,32 +58,18 @@ def migrate():
 
 @roles('jellyrisk')
 def pulldb():
-    with cd(env['project_path']):
-        filename = 'dump_data.json'
-        dump_file = os.path.join(env['project_path'], filename)
-        _run_manage('%s' % _dump_cms_data(dump_file))
-        get(dump_file, '.')
-        run('rm %s' % dump_file)
-        if confirm("Load dumped remote data into local DB?"):
-            local('./manage.py loaddata %s' % filename)
+    filename = 'mysql_dumped.sql'
+    dump_file = '%s' % filename
+    run(_dump_mysql_data(dump_file))
+    get(dump_file, '.')
+    run('rm %s' % dump_file)
+    if confirm("Load dumped remote data into local DB?"):
+        local('mysql --defaults-file=".mysqldump_cnf" %s < %s' % (env['project_name'], filename))
             
-
-@roles('jellyrisk')
-def pushdb():
-    local_file = 'dump_data.json'
-    remote_file = os.path.join(env['project_path'], local_file)
-    local('./manage.py %s' % _dump_cms_data(local_file))
-    put(local_file, remote_file)
-    if confirm("Load dumped local data into remote DB?"):
-        with cd(env['project_path']):        
-            _run_manage('loaddata %s' % remote_file)
-
 
 def _run_manage(command):
     run("%s ./manage.py %s" % (env['python_path'], command))
 
+def _dump_mysql_data(file_path):
+    return 'mysqldump --defaults-file="/home/jellyrisk/.mysqldump_cnf" --single-transaction jellyrisk > %s' % file_path
 
-def _dump_cms_data(file_path):
-    plugins = ('text', 'picture', 'link', 'file', 'snippet', 'googlemap',
-               'cmsplugin_embeddedpages')
-    return 'dumpdata cms %s --natural > %s' % (' '.join(plugins), file_path)

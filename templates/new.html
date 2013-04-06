@@ -1,0 +1,14 @@
+{% extends "page.html" %}
+{% load cms_tags menu_tags sekizai_tags %}
+
+{% block page_content %}
+    {% addtoblock "css" %}
+      <link rel="stylesheet" href="{{ STATIC_URL }}css/new.css">
+    {% endaddtoblock %}
+    <div id="news_image">
+      {% placeholder news_image %}
+    </div>
+    <div id="news_content">
+      {% placeholder news_content %}
+    </div>
+{% endblock %}

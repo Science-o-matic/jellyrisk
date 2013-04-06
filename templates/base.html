@@ -1,4 +1,4 @@
-{% load cms_tags sekizai_tags %}
+{% load cms_tags menu_tags sekizai_tags %}
 
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -36,6 +36,7 @@
 
 {% cms_toolbar %}
 <div id="wrapper">
+  {% language_chooser "language_chooser.html" %}
   {% block base_content %}{% endblock %}
   <div id="footer">
     <img src="{{ STATIC_URL }}img/Life-logo.png"/>
