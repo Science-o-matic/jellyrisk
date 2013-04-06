@@ -7,7 +7,7 @@ body {
 #right { 
      float: right; 
      width: 260px; 
-     background-color: #9de4ef;
+     background-color: #DBF2F6;
 }
 
 #top {
@@ -17,21 +17,18 @@ body {
 
     #project_description {
       color: #565555;
-      font-weight: bold;
       text-align: left;
+      margin-bottom: 4ex; 
+      font-size: 120%;
+    }
+
+    #project_description p { 
+      margin-top: 1ex; 
     }
   
     #dynamic_menu ul#nav {
       margin-top: 5px;
       padding-left: 5px;
-    }
-
-    #dynamic_menu ul li.selected {
-      margin-right: 0;
-    }
-
-    #dynamic_menu ul li.sibling {
-      margin-right: 0;
     }
 
 #content {
@@ -47,7 +44,6 @@ body {
 
   #news {
     float: left;
-    width: 72%;
   }
    
    #news .new { 
@@ -89,7 +85,7 @@ body {
 
   #tools {
     float: right; 
-    width: 260px;;
+    width: 260px;
     border-radius: 20px;
   }
 

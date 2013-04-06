@@ -9,7 +9,7 @@ h2 {
 }
 
 #wrapper {
-  width: 978px;
+  width: 1000px;
   margin: 0 auto 0 auto;
 }
 
@@ -23,11 +23,11 @@ h2 {
     padding-top: 1ex;
     padding-bottom: 1ex;
     padding-left: 1ex;
-    padding-right: 6ex;
+    padding-right: 4ex;
     margin-right: 2ex;
   }
 
-    #dynamic_menu ul li:hover {
+    #dynamic_menu ul li:hover, #dynamic_menu ul li.selected  {
       background: url('../img/medusa-indicador.png') no-repeat;
       background-position: right;
     }
@@ -35,8 +35,7 @@ h2 {
   #dynamic_menu ul li a {
     color: #39b54a; 
     text-decoration: none;
-    font-size: 100%;
-    font-weight: bold;
+    font-size: 110%;
   }
 
     #dynamic_menu ul li a:visited {
