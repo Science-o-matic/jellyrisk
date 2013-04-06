@@ -16,6 +16,8 @@ h2 {
 #dynamic_menu ul {
   list-style: none;
   font-size: small;
+  padding-bottom: 2ex;
+  border-bottom: 1px solid #39B54A;
 }
 
   #dynamic_menu ul li {
