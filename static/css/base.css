@@ -57,7 +57,7 @@ h2 {
    padding: .5ex;
    padding-right: 1ex;        
    padding-left: 1ex;
-   -moz-border-radius-bottomleft: 4px;
+   -moz-border-radius-bottomright: 4px;
    border-bottom-right-radius: 4px;
    opacity:0.9;
    filter:alpha(opacity=90); /* For IE8 and earlier */
