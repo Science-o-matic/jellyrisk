@@ -30,6 +30,7 @@ body {
       text-align: left;
       margin-bottom: 4ex; 
       font-size: 120%;
+      width: 95%;
     }
 
     #project_description p { 
@@ -129,7 +130,28 @@ body {
   #picture_gallery { 
       clear: both;
       text-align: center;
+      background-color: #39B54A;
+      padding: 6px;
+      border-radius: 4px;
   }
+
+  #picture_gallery a {
+      color: white;
+  } 
+
+  #contact { 
+      background-color: #39B54A;
+      padding: 6px;
+      border-radius: 4px;
+      margin-top: 2ex;
+  } 
+
+  #contact a {
+    color: white;
+    padding: 6px;
+    padding-left: 48px;
+    background: url('../img/mail.png') no-repeat; )
+  } 
 
   #sights_link {
     clear: both;
