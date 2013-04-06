@@ -2,6 +2,7 @@ import os
 from fabric.api import *
 from fabric.operations import get, put
 from fabric.contrib.console import confirm
+from fabric.contrib.project import rsync_project
 from fab_settings import SUDOER_USER
 
 
@@ -14,6 +15,7 @@ env['project_name'] = 'jellyrisk'
 env['project_path'] = "/home/" + env['project_name'] + "/www/" + env['project_name'] + "/"
 env['python_path'] = "/home/" + env['project_name']+ "/.virtualenvs/" + env['project_name'] + "/bin/python"
 env['pip_path'] = "/home/" + env['project_name'] + "/.virtualenvs/" + env['project_name'] + "/bin/pip"
+env['project_media_dir'] = '/var/www/jellyrisk/media/'
 
 
 @roles('jellyrisk')
@@ -73,3 +75,6 @@ def _run_manage(command):
 def _dump_mysql_data(file_path):
     return 'mysqldump --defaults-file="/home/jellyrisk/.mysqldump_cnf" --single-transaction jellyrisk > %s' % file_path
 
+@roles('jellyrisk')
+def syncmedia():
+    get(env['project_media_dir'], local_path=".")
