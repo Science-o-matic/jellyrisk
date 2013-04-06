@@ -43,10 +43,8 @@
       float: left;                      
   }
 
-   #news h2 { 
-      float: left;                      
-  }
-   #news p { 
+   #news .new_text { 
+      width: 80%;
       float: left;                      
   }
 
