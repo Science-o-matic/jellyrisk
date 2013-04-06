@@ -124,7 +124,7 @@ CMS_PLACEHOLDER_CONF = {
         'name':gettext("New #1 Picture"),
     },
     'new-text-1': {
-        'plugins': ['TextPlugin'],
+        'plugins': ['TextPlugin', 'LinkPlugin'],
         'name':gettext("New #1 Text"),
     },
     'new-image-2': {
@@ -132,7 +132,7 @@ CMS_PLACEHOLDER_CONF = {
         'name':gettext("New #2 Picture"),
     },
     'new-text-2': {
-        'plugins': ['TextPlugin'],
+        'plugins': ['TextPlugin', 'LinkPlugin'],
         'name':gettext("New #2 Text"),
     },
 }
