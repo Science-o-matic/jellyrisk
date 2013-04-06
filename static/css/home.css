@@ -21,6 +21,15 @@
 
     #dynamic_menu ul#nav {
       margin-top: 5px;
+      padding-left: 5px;
+    }
+
+    #dynamic_menu ul li.selected {
+      margin-right: 0;
+    }
+
+    #dynamic_menu ul li.sibling {
+      margin-right: 0;
     }
 
 #content {
@@ -62,8 +71,9 @@
 
   #tools {
     float: right; 
-    width: 275px;;
-    background-color: #01bbd6;
+    width: 260px;;
+    background-color: #9de4ef;
+    border-radius: 20px;
   }
     #search {
       height: 8ex;
