@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load cms_tags menu_tags sekizai_tags %}
+{% load cms_tags menu_tags sekizai_tags i18n %}
 
 {% block base_content %}
     {% addtoblock "css" %}
@@ -23,7 +23,10 @@
       </div>
       <div id="news_tools">
         <div id="news">
-          {% placeholder "news" %} 
+          {% placeholder "new-1" %}
+          <a href="">{% trans "Read more.." %}</a>
+          {% placeholder "new-2" %}
+          <a href="">{% trans "Read more.." %}</a>
         </div>
         <div id="tools">
           <div id="search">
