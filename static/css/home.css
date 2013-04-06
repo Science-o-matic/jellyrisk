@@ -12,13 +12,16 @@
       color: #565555;
       font-weight: bold;
       text-align: left;
-      font-size: 84%;
     }
   
   #dynamic_menu {
     float: right;
     width: 260px;
   }
+
+    #dynamic_menu ul#nav {
+      margin-top: 5px;
+    }
 
 #content {
   width: 100%;
