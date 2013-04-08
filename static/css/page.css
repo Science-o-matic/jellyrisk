@@ -1,24 +1,17 @@
 
 #page_wrapper {
-	width:100%;
-	padding:0px;
-	float:right;
-	margin: 0px;
-	text-align: justify;
-	font-family: Verdana;
+     margin: 5px auto 0 auto;
 		}
 	
 #page_content {
-	width:75%;
-	padding:0px;
-	float:right;
 	background-color: transparent;
+	text-align: justify;
 		}
 		
 	#breacrumbs
 {
     font: 13px Helvetica;
-    background-image:url('../img/bc_bg.png');
+    background-color: #DBF2F6;
     background-repeat:repeat-x;
     height:30px;
     line-height:30px;
@@ -28,7 +21,7 @@
     overflow:hidden;
     margin:0px;
     padding:0px;
-    width:25%;
+    width:27%;
 }
 #breacrumbs li
 {
@@ -43,7 +36,7 @@
     background-image:url('../img/bc_separator.png');
     background-repeat:no-repeat;
     background-position:right;
-    padding-right: 15px;
+    padding-right: 10px;
     text-decoration: none;
     color:#454545;
 }
@@ -53,6 +46,22 @@
     border: none;
     margin: 8px 0px;
 }
-#dynamic_menu {
-    float: left;
+#left { 
+	 float: left; width: 248px; 
+     background-color: #DBF2F6;
+     padding: 12px;
+     padding-top: .5ex;
+     -moz-border-radius-bottomright: 4px;
+     border-bottom-right-radius: 4px;
+     -moz-border-radius-bottomleft: 4px;
+     border-bottom-left-radius: 4px;
+     -moz-border-radius-topright: 4px;
+     border-top-right-radius: 4px;
+     -moz-border-radius-topleft: 4px;
+     border-top-left-radius: 4px;
+}
+
+#right { 
+     float: right; 
+     width: 718px; 
 }

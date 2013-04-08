@@ -1,6 +1,7 @@
 body {
   font-family: Verdana;
   font-size: normal;
+  color: #8b8b8b;
 }
 
 h2 {
@@ -43,8 +44,10 @@ h2 {
     #dynamic_menu ul li a:visited {
       color: #39b54a; 
     }
-
-
+    #dynamic_menu ul#nav {
+      margin: 0;
+      padding-left: 5px;
+    }
 #disclaimer{
   font-size: 70%;
   margin-top: 5px;
@@ -67,4 +70,10 @@ h2 {
 
 #language_chooser a { 
    color: #39b54a;
+}
+#footer {
+    margin-top: 1ex;
+    margin-bottom: 2ex;
+    position: absolute;
+    bottom: 0px; width: 100%; 
 }

@@ -7,21 +7,27 @@
       <link rel="stylesheet" href="{{ STATIC_URL }}css/page.css">
       <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
     {% endaddtoblock %}
-    <div id="page_header">
+   <div id="page_header">
       {% placeholder "header_image" %}
     </div>
     <div id="breacrumbs">
-    	<li><img src="{{ STATIC_URL }}img/home.png" id="home"/></li>
-      {% show_breadcrumb %}
-    </div>
+         {% show_breadcrumb %}
+        </div>
+   <div id="right"> 
     <div id="page_wrapper">
       {% block page_content %}
       <div id="page_content">
         {% placeholder base_content %}
       </div>
       {% endblock %}
-      <div id="dynamic_menu">
-        {% show_menu %}
-      </div>
-    </div>
+    </div>  
+   </div> 
+      <div id="left">
+       <ul id="nav">
+        <div id="dynamic_menu">
+         {% show_menu 0 100 0 1%}
+        </div>
+       </ul>
+      </div> 
+    
 {% endblock %}
