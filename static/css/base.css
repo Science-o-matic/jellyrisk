@@ -77,3 +77,7 @@ h2 {
     position: absolute;
     bottom: 0px; width: 100%; 
 }
+#language {
+	float: right; 
+     width: 718px; 
+}

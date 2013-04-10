@@ -7,13 +7,12 @@
       <link rel="stylesheet" href="{{ STATIC_URL }}css/page.css">
       <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
     {% endaddtoblock %}
-   <div id="page_header">
+    
+   <div id="right"> 
+   	 <div id="page_header" align="center">
       {% placeholder "header_image" %}
     </div>
-    <div id="breacrumbs">
-         {% show_breadcrumb %}
-        </div>
-   <div id="right"> 
+   
     <div id="page_wrapper">
       {% block page_content %}
       <div id="page_content">
@@ -22,12 +21,15 @@
       {% endblock %}
     </div>  
    </div> 
+    <div id="breacrumbs">
+         {% show_breadcrumb %}
+    </div>
       <div id="left">
-       <ul id="nav">
-        <div id="dynamic_menu">
-         {% show_menu 0 100 0 1%}
-        </div>
-       </ul>
+       <div id="dynamic_menu">
+        <ul id="nav">  
+         {% show_menu 0 100 100 100%}
+        </ul>
+       </div> 
       </div> 
     
 {% endblock %}
