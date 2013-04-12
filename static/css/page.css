@@ -1,15 +1,13 @@
-
 #page_wrapper {
      margin: 5px auto 0 auto;
-		}
+}
 	
 #page_content {
 	background-color: transparent;
 	text-align: justify;
-		}
+}
 		
-	#breacrumbs
-{
+#breacrumbs {
     font: 13px Helvetica;
     background-color: #DBF2F6;
     background-repeat:repeat-x;
@@ -23,29 +21,29 @@
     padding:0px;
     width:27%;
 }
-#breacrumbs li
-{
-    list-style-type:none;
-    float:left;
-    padding-left:10px;
-}
-#breacrumbs a
-{
-    height:30px;
-    display:block;
-    background-image:url('../img/bc_separator.png');
-    background-repeat:no-repeat;
-    background-position:right;
-    padding-right: 10px;
-    text-decoration: none;
-    color:#454545;
-}
 
-#home
-{
+  #breacrumbs li {
+      list-style-type:none;
+      float:left;
+      padding-left:10px;
+  }
+  
+  #breacrumbs a {
+      height:30px;
+      display:block;
+      background-image:url('../img/bc_separator.png');
+      background-repeat:no-repeat;
+      background-position:right;
+      padding-right: 10px;
+      text-decoration: none;
+      color:#454545;
+  }
+
+#home {
     border: none;
     margin: 8px 0px;
 }
+
 #left { 
 	 float: left; width: 248px; 
      background-color: #DBF2F6;
@@ -65,6 +63,7 @@
      float: right; 
      width: 718px; 
 }
+
 #page_header {
 	width: 100%; 
 }
