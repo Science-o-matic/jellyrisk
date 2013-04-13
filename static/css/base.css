@@ -18,7 +18,6 @@ h2 {
   list-style: none;
   font-size: small;
   padding-bottom: 2ex;
-  /*border-bottom: 1px solid #39B54A;*/
 }
 
   #dynamic_menu ul li {
@@ -51,8 +50,8 @@ h2 {
     }
 
     #disclaimer{
-  font-size: 70%;
-  margin-top: 5px;
+      font-size: 70%;
+      margin-top: 5px;
 }
 
 #language_chooser {
