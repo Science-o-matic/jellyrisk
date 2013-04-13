@@ -18,7 +18,7 @@ h2 {
   list-style: none;
   font-size: small;
   padding-bottom: 2ex;
-  border-bottom: 1px solid #39B54A;
+  /*border-bottom: 1px solid #39B54A;*/
 }
 
   #dynamic_menu ul li {
@@ -28,6 +28,7 @@ h2 {
     padding-left: 1ex;
     padding-right: 4ex;
     margin-right: 2ex;
+    border-bottom: 1px solid #39b54a;
   }
 
     #dynamic_menu ul li:hover, #dynamic_menu ul li.selected  {
@@ -36,13 +37,13 @@ h2 {
     }
 
   #dynamic_menu ul li a {
-    color: #39b54a; 
+    color: #4dc5d9; 
     text-decoration: none;
     font-size: 110%;
   }
 
     #dynamic_menu ul li a:visited {
-      color: #39b54a; 
+      color: #4dc5d9; 
     }
     #dynamic_menu ul#nav {
       margin: 0;
@@ -77,6 +78,7 @@ h2 {
 }
 
 #language {
+  display: none;
 	float: right; 
   width: 718px; 
 }
