@@ -27,6 +27,10 @@ body {
     #project_description p { 
       margin-top: 1ex; 
     }
+
+    #project_description span.plugin_link a { 
+     display: inline;
+    }
   
     #dynamic_menu ul#nav {
       margin: 0;
