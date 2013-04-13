@@ -189,6 +189,14 @@ LOGGING = {
             'class': 'logging.StreamHandler',
             'formatter': 'simple'
         },
+        'logfile': {
+            'level':'DEBUG',
+            'class':'logging.handlers.RotatingFileHandler',
+            'filename': PROJECT_DIR + "/logfile",
+            'maxBytes': 50000,
+            'backupCount': 2,
+            'formatter': 'verbose',
+        },
         'mail_admins': {
             'level': 'ERROR',
             'class': 'django.utils.log.AdminEmailHandler',
@@ -196,7 +204,7 @@ LOGGING = {
     },
     'loggers': {
         'django': {
-            'handlers': ['mail_admins'],
+            'handlers': ['logfile'],
             'propagate': True,
             'level': 'INFO',
         },
