@@ -46,7 +46,7 @@
 
 #left { 
 	 float: left; width: 248px; 
-     background-color: #DBF2F6;
+     /*background-color: #DBF2F6;*/
      padding: 12px;
      padding-top: .5ex;
      -moz-border-radius-bottomright: 4px;
