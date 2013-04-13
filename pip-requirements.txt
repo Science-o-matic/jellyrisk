@@ -7,7 +7,7 @@ ipython==0.10
 fabric
 gunicorn
 django-cms
-PIL
+pillow
 setuptools
 git+https://github.com/ygneo/cmsplugin-embedded-pages.git
 django-filer
