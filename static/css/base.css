@@ -9,6 +9,13 @@ h2 {
   font-size: 120%;
 }
 
+img {
+border:1px solid transparent;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
 #wrapper {
   width: 1000px;
   margin: 5px auto 0 auto;
