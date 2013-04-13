@@ -1,58 +1,94 @@
-
 #page_wrapper {
-	width:100%;
-	padding:0px;
-	float:right;
-	margin: 0px;
-	text-align: justify;
-	font-family: Verdana;
-		}
+     margin: 5px auto 0 auto;
+}
 	
 #page_content {
-	width:75%;
-	padding:0px;
-	float:right;
 	background-color: transparent;
-		}
+	text-align: justify;
+}
 		
-	#breacrumbs
-{
-    font: 13px Helvetica;
-    background-image:url('../img/bc_bg.png');
-    background-repeat:repeat-x;
-    height:30px;
-    line-height:30px;
-    color:#9b9b9b;
-    border:solid 1px #cacaca;
-    width:100%;
-    overflow:hidden;
-    margin:0px;
-    padding:0px;
-    width:25%;
-}
-#breacrumbs li
-{
-    list-style-type:none;
-    float:left;
-    padding-left:10px;
-}
-#breacrumbs a
-{
-    height:30px;
-    display:block;
-    background-image:url('../img/bc_separator.png');
-    background-repeat:no-repeat;
-    background-position:right;
-    padding-right: 15px;
-    text-decoration: none;
-    color:#454545;
-}
-
-#home
-{
+#home {
     border: none;
     margin: 8px 0px;
 }
-#dynamic_menu {
-    float: left;
+
+#left { 
+	 float: left;
+   width: 248px; 
+   padding: 12px;
+   padding-top: .5ex;
 }
+
+#right { 
+     float: right; 
+     width: 718px; 
+}
+
+#page_header {
+	width: 100%; 
+}
+
+#dynamic_menu ul li:hover {
+  background-position: left;
+}
+
+#dynamic_menu ul li {
+  text-align: left;
+  padding-left: 4ex;
+  margin-left: 2ex;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+  #dynamic_menu ul li.selected {
+    padding-left: 0;
+    background: none;
+  }
+
+  #dynamic_menu ul li ul {
+    padding-left: 2ex;
+    margin-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+    #dynamic_menu ul li.selected ul li.descendant {
+      border-bottom: none;
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    #dynamic_menu ul li.ancestor {
+      background: none;
+      padding-left: 0;
+    }
+
+      #dynamic_menu ul li.ancestor a {
+        padding-left: 4ex;
+      }
+
+    #dynamic_menu ul li.ancestor ul {
+      padding-left: 2ex;
+    }
+
+        #dynamic_menu li.ancestor ul li {
+          border-bottom: none;
+          padding-left: 0;
+          margin-left: 0;
+        }
+  
+          #dynamic_menu li.ancestor ul li.sibling {
+            padding-left: 0;
+            display: block;
+          }
+
+    #dynamic_menu ul li.selected a {
+      background: url('../img/medusa-indicador.png') no-repeat;
+      background-position: left;
+      display: block;
+      padding-left: 4ex;
+    }
+
+    #dynamic_menu ul li.selected ul li.descendant a {
+      background: none;
+    }
