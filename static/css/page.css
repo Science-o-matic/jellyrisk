@@ -92,3 +92,7 @@
     #dynamic_menu ul li.selected ul li.descendant a {
       background: none;
     }
+
+.contact_field {
+  display: block;
+}
