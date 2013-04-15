@@ -158,3 +158,16 @@ body {
     margin-top: 1ex;
     margin-bottom: 2ex;
 }
+#facebook { 
+      background-color: #39B54A;
+      padding: 6px;
+      border-radius: 4px;
+      margin-top: 1ex;
+  } 
+
+  #facebook a {
+    color: white;
+    padding: 6px;
+    padding-left: 38px;
+    background: url('../img/facebook2.png') no-repeat; )
+  } 
