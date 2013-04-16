@@ -93,3 +93,7 @@ border-radius: 10px;
 #language_chooser a { 
    color: #39b54a;
 }
+
+#disclaimer {
+  text-align: justify;
+}
