@@ -160,7 +160,7 @@ body {
 }
 #facebook { 
       background-color: #39B54A;
-      padding: 6px;
+      padding: 9px;
       border-radius: 4px;
       margin-top: 1ex;
   } 
@@ -171,3 +171,10 @@ body {
     padding-left: 38px;
     background: url('../img/facebook2.png') no-repeat; )
   } 
+  #more_news {
+      text-align:right;
+      color: #39B54A;
+      margin-bottom: 4ex; 
+      font-size: 120%;
+      width: 95%;
+    }
