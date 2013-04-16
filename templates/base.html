@@ -42,10 +42,18 @@
   </div> 
   {% block base_content %}{% endblock %}
   <div id="footer">
-    <img src="{{ STATIC_URL }}img/Life-logo.png"/>
-    <img src="{{ STATIC_URL }}img/Natura2000-logo.png"/>
+    <p>
+      <img src="{{ STATIC_URL }}img/EU-ENPI.png"/>
+      <img src="{{ STATIC_URL }}img/conismalogo.png"/>
+      <img src="{{ STATIC_URL }}img/logo-icm-ca-csic.png"/>
+    </p>
+    <p>
+      <img src="{{ STATIC_URL }}img/maltalogo.png"/>
+      <img src="{{ STATIC_URL }}img/tunez1.png"/>
+      <img src="{{ STATIC_URL }}img/tunez2.png"/>
+    </p>
     <div id="disclaimer">
-      The Jellyrisk ENPI Project is an integrated monitoring of jellyfish outbreaks under anthropogenic and climatic impacts in the Mediterranean sea (coastal zones): trophic and socio-economic risks. It is funded by the - Copyright {% now "Y" %}
+      {% placeholder "disclaimer" %}
     </div>
   </div>
 </div>
