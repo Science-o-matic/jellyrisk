@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-10 19:31+0100\n"
+"PO-Revision-Date: 2012-11-15 16:58+0100\n"
+"Last-Translator: Alejandro Núñez <alejandro@toporojo.es>\n"
+"Language-Team: Español <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: admin.py:32
+msgid "More options..."
+msgstr "Más opciones..."
+
+#: cms_app.py:6
+msgid "Simple events aplication"
+msgstr "Simple aplicación para eventos"
+
+#: cms_plugins.py:32
+msgid "Today"
+msgstr "Hoy"
+
+#: cms_plugins.py:35 cms_plugins.py:45
+msgid "Events found"
+msgstr "Eventos encontrados"
+
+#: cms_plugins.py:76
+msgid "Calendar Events"
+msgstr "Calendario de eventos"
+
+#: models.py:16
+msgid "Name"
+msgstr "Nombre"
+
+#: models.py:26
+msgid "Event category"
+msgstr "Categoría de eventos"
+
+#: models.py:27
+msgid "Event categories"
+msgstr "Categorías de eventos"
+
+#: models.py:68
+msgid ""
+"The end date must be after the start date.  Please select a new end date, or "
+"leave blank if this event is only one day long."
+msgstr ""
+"La fecha de finalización debe ser posterior a la fecha de inicio. Selecciona "
+"una nueva fecha de finalización o dejala en blanco si el evento es de un "
+"solo día."
+
+#: models.py:74
+msgid "Title"
+msgstr "Título"
+
+#: models.py:74
+msgid "Example: \"Second Annual Charity Auction\""
+msgstr "Ejemplo:\"Segunda subasta anual de caridad\""
+
+#: models.py:75
+msgid "Description"
+msgstr "Descripción"
+
+#: models.py:76
+msgid ""
+"* Optional.  Give more details on this event (items to bring, links to other "
+"sites, etc)."
+msgstr ""
+"* Opcional. Dar más detalles sobre este evento (artículos para llevar, "
+"enlaces a otros sitios, etc.)"
+
+#: models.py:77
+msgid "Location"
+msgstr "Lugar"
+
+#: models.py:77
+msgid "* Optional."
+msgstr "* Opcional."
+
+#: models.py:78
+msgid "Date"
+msgstr "Fecha"
+
+#: models.py:79
+msgid ""
+"Format: yyyy-mm-dd.  When does this event take place?  If the event is "
+"longer than one day, enter the start date here and the end date below."
+msgstr ""
+"Formato: aaaa-mm-dd. Si el evento es más largo de un día, escriba la fecha "
+"de inicio y la de finalización más abajo."
+
+#: models.py:81
+msgid "* Optional.  Examples: \"8 am - 4 pm\", \"7:30 pm\""
+msgstr "* Opcional. Ejemplo: \"8 am - 4 pm\", \"7:30 pm\""
+
+#: models.py:83
+msgid "End date"
+msgstr "Fecha de finalización"
+
+#: models.py:84
+msgid ""
+"* Optional.  If this event is more than one day long, enter the end date "
+"here.  Defaults to \"start\" date if left blank."
+msgstr ""
+"* Opcional. Si este evento es más de un día largo, introduzca la fecha de "
+"finalización aquí."
+
+#: models.py:104
+msgid "(No categories)"
+msgstr "(Sin categorías)"
+
+#: models.py:136
+msgid "Event"
+msgstr "Evento"
+
+#: models.py:137 templates/simple_events/base.html:6
+msgid "Events"
+msgstr "Eventos"
+
+#: templates/simple_events/event_detail.html:6
+msgid "This event is over."
+msgstr "Este evento ha finalizado."
+
+#: templates/simple_events/event_detail.html:24
+msgid "Next event"
+msgstr "Próximo evento"
+
+#: templates/simple_events/event_detail.html:29
+msgid "Previous event"
+msgstr "Evento anterior"
+
+#: templates/simple_events/events_archive.html:8
+msgid "Past events"
+msgstr "Eventos pasados"
+
+#: templates/simple_events/events_archive.html:10
+msgid "Next events"
+msgstr "Próximos eventos"
+
+#~ msgid "Next Month"
+#~ msgstr "Més anterior"

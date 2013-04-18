@@ -165,7 +165,8 @@ INSTALLED_APPS = (
     'imagestore',
     'sorl.thumbnail',
     'tagging',
-    'imagestore.imagestore_cms'
+    'imagestore.imagestore_cms',
+	'simple_events'
 )
 
 LOGGING = {
