@@ -28,7 +28,8 @@
 
 #right { 
      float: right; 
-     width: 718px; 
+     width: 718px;
+     margin-bottom: 5ex;
 }
 
 #page_header {

@@ -82,6 +82,7 @@ border-radius: 10px;
     bottom: 0px; width: 100%;
     text-align: center;
     clear: both;
+    border-top: solid thin #39b54a;
 }
 
 #language {
