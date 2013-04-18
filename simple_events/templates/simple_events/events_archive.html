@@ -1,0 +1,23 @@
+{% load i18n %}
+
+<div class="events">
+{% regroup events by has_passed as events_list %}
+    {% for status in events_list %}
+        {% if status.grouper %}
+        <h1>{% trans "Past events" %}</h1>
+        {% else %}
+        <h1>{% trans "Next events" %}</h1>
+        {% endif %}
+        {% regroup status.list by start as events_start %}
+        <div class="day">
+        {% for dates in events_start %}
+            <h2>{{ dates.grouper }}</h2>
+            <ul>
+            {% for event in dates.list %}
+                <li><a href="{% url event_detail event.id %}" title="{{ event.name }}">{{ event.name }}</a></li>
+            {% endfor %}
+            </ul>
+        {% endfor %}
+        </div>
+    {% endfor %}
+</div>
