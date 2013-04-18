@@ -30,6 +30,7 @@
      float: right; 
      width: 718px;
      margin-bottom: 5ex;
+     min-height: 590px;
 }
 
 #page_header {
