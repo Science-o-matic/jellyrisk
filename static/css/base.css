@@ -97,4 +97,17 @@ border-radius: 10px;
 
 #disclaimer {
   text-align: justify;
+  clear: both;
 }
+
+#footer {
+  text-align: justify;
+}
+
+  #right_logos {
+    float: right;
+  }
+
+  #left_logos {
+    float:left;
+  }

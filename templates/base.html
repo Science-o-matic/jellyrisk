@@ -42,16 +42,21 @@
   </div> 
   {% block base_content %}{% endblock %}
   <div id="footer">
-    <p>
-      <img src="{{ STATIC_URL }}img/EU-ENPI.png"/>
-      <img src="{{ STATIC_URL }}img/conismalogo.png"/>
-      <img src="{{ STATIC_URL }}img/logo-icm-ca-csic.png"/>
-    </p>
-    <p>
-      <img src="{{ STATIC_URL }}img/maltalogo.png"/>
-      <img src="{{ STATIC_URL }}img/tunez1.png"/>
-      <img src="{{ STATIC_URL }}img/tunez2.png"/>
-    </p>
+    <div id="right_logos">
+      <img src="{{ STATIC_URL }}img/EU.png"/>
+      <img src="{{ STATIC_URL }}img/ENPI.png"/>
+    </div>
+    <div id="left_logos">
+      <p>
+        <img src="{{ STATIC_URL }}img/logo-icm-ca-csic.png"/>
+        <img src="{{ STATIC_URL }}img/maltalogo.png"/>
+        <img src="{{ STATIC_URL }}img/conismalogo.png"/>
+      </p>
+      <p>
+        <img src="{{ STATIC_URL }}img/tunez1.png"/>
+        <img src="{{ STATIC_URL }}img/tunez2.png"/>
+      </p>
+    </div>
   </div>
   <div id="disclaimer">
     {% placeholder "disclaimer" %}
