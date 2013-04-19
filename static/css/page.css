@@ -105,3 +105,12 @@
 .contact_field {
   display: block;
 }
+
+div.header.embedded-page-header {
+  display: none;
+}
+
+div.content.embedded-page-content .plugin_picture {
+  float:left;
+  margin-right: 2ex;
+}
