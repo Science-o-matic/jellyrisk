@@ -82,6 +82,7 @@ border-radius: 10px;
     bottom: 0px; width: 100%;
     text-align: center;
     clear: both;
+    border-top: solid thin #39b54a;
 }
 
 #language {
@@ -96,4 +97,17 @@ border-radius: 10px;
 
 #disclaimer {
   text-align: justify;
+  clear: both;
 }
+
+#footer {
+  text-align: justify;
+}
+
+  #right_logos {
+    float: right;
+  }
+
+  #left_logos {
+    float:left;
+  }

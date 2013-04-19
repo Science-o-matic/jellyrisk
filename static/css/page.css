@@ -19,9 +19,18 @@
    padding-top: .5ex;
 }
 
+#nav {
+  background: url('../img/Jellyrisk.png') no-repeat;
+  background-position: top right;
+  background-origin: content-box;
+  background-padding: 1ex;
+}
+
 #right { 
      float: right; 
-     width: 718px; 
+     width: 718px;
+     margin-bottom: 5ex;
+     min-height: 590px;
 }
 
 #page_header {
