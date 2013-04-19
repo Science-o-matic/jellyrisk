@@ -106,11 +106,21 @@
   display: block;
 }
 
-div.header.embedded-page-header {
-  display: none;
+div.cmsplugin.cmsplugin-embeded-pages.embedded-page-for- {
+  margin-top: 3ex;
+  clear: both;
 }
 
-div.content.embedded-page-content .plugin_picture {
-  float:left;
-  margin-right: 2ex;
-}
+  div.embedded-page.row {
+    clear: both;
+    margin-bottom: 5ex;
+  }
+
+  div.header.embedded-page-header {
+    display: none;
+  }
+  
+  div.content.embedded-page-content .plugin_picture {
+    float:left;
+    margin-right: 2ex;
+  }
