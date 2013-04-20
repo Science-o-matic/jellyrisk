@@ -124,3 +124,11 @@ div.cmsplugin.cmsplugin-embeded-pages.embedded-page-for- {
     float:left;
     margin-right: 2ex;
   }
+
+  div.embedded-page-placeholder div {
+    padding-left: 20ex;
+  }
+
+  div.embedded-page-placeholder p {
+    padding-left: 20ex;
+  }
