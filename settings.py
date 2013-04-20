@@ -167,7 +167,8 @@ INSTALLED_APPS = (
     'imagestore',
     'sorl.thumbnail',
     'tagging',
-    'imagestore.imagestore_cms'
+    'imagestore.imagestore_cms',
+    'store_locator'
 )
 
 LOGGING = {
@@ -222,6 +223,3 @@ try:
     from local_settings import *
 except ImportError:
     pass
-
-
-
