@@ -14,3 +14,4 @@ django-filer
 recaptcha-client
 cmsplugin-contact
 imagestore
+git+https://github.com/ygneo/django-cms-storelocator.git
