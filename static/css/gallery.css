@@ -2,4 +2,5 @@
   #gallery a {
     text-decoration: none;
     float: left;
+    margin: 1.5ex;
   }
