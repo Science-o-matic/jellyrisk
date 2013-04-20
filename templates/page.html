@@ -6,27 +6,28 @@
     {% addtoblock "css" %}
       <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
       <link rel="stylesheet" href="{{ STATIC_URL }}css/page.css">
+      <link rel="stylesheet" href="{{ STATIC_URL }}css/gallery.css">
     {% endaddtoblock %}
-    
-   <div id="right"> 
-   	 <div id="page_header" align="center">
+
+   <div id="right">
+     <div id="page_header" align="center">
       {% placeholder "header_image" %}
     </div>
-   
+
     <div id="page_wrapper">
       {% block page_content %}
       <div id="page_content">
         {% placeholder base_content %}
       </div>
       {% endblock %}
-    </div>  
-   </div> 
+    </div>
+   </div>
       <div id="left">
        <div id="dynamic_menu">
-        <ul id="nav">  
+        <ul id="nav">
          {% show_menu 0 100 0 100%}
         </ul>
-       </div> 
-      </div> 
-    
+       </div>
+      </div>
+
 {% endblock %}
