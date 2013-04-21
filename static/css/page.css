@@ -132,3 +132,12 @@ div.cmsplugin.cmsplugin-embeded-pages.embedded-page-for- {
   div.embedded-page-placeholder p {
     padding-left: 20ex;
   }
+
+.plugin_file a {
+  background: url('../img/medusa-indicador-small.png') no-repeat;
+  background-position: left;
+  display: block;
+  padding-left: 3ex;
+  margin-left: 2ex;
+  color: #4dc5d9;
+}
