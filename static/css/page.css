@@ -141,3 +141,14 @@ div.cmsplugin.cmsplugin-embeded-pages.embedded-page-for- {
   margin-left: 2ex;
   color: #4dc5d9;
 }
+
+.plugin_link {
+  display: block;
+}
+
+  .plugin_link a {
+    color: #4dc5d9;
+    padding-left: 3ex;
+    margin-left: 2ex;
+    background: url('../img/medusa-indicador-small.png') no-repeat;
+  }
