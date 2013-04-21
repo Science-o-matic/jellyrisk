@@ -168,7 +168,8 @@ INSTALLED_APPS = (
     'sorl.thumbnail',
     'tagging',
     'imagestore.imagestore_cms',
-    'store_locator'
+    'store_locator',
+    'haystack',
 )
 
 LOGGING = {
@@ -217,6 +218,13 @@ LOGGING = {
             'propagate': False,
         },
     }
+}
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+      'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+      'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
+    },
 }
 
 try:
