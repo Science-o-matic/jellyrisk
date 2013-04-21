@@ -12,7 +12,6 @@ urlpatterns = patterns('',
     url(r'^gallery/', include('imagestore.urls', namespace='imagestore')),
     url(r'^store-locator/', include('store_locator.urls')),
     url(r'^', include('cms.urls')),
-    (r'^search/', include('haystack.urls')),
 )
 
 if settings.DEBUG:

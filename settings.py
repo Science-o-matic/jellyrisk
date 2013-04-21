@@ -170,6 +170,7 @@ INSTALLED_APPS = (
     'imagestore.imagestore_cms',
     'store_locator',
     'haystack',
+    'cms_search',
 )
 
 LOGGING = {
@@ -226,6 +227,9 @@ HAYSTACK_CONNECTIONS = {
       'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
     },
 }
+
+HAYSTACK_SITECONF = 'jellyrisk.search_sites'
+HAYSTACK_SEARCH_ENGINE = 'whoosh'
 
 try:
     from local_settings import *
