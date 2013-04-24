@@ -170,7 +170,6 @@ INSTALLED_APPS = (
     'imagestore.imagestore_cms',
     'store_locator',
     'haystack',
-    'cms_search',
 )
 
 LOGGING = {
