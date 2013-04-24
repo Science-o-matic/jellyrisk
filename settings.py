@@ -227,9 +227,6 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
-HAYSTACK_SITECONF = 'jellyrisk.search_sites'
-HAYSTACK_SEARCH_ENGINE = 'whoosh'
-
 try:
     from local_settings import *
 except ImportError:
