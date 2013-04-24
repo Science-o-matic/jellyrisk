@@ -170,6 +170,7 @@ INSTALLED_APPS = (
     'imagestore.imagestore_cms',
     'store_locator',
     'haystack',
+    'jellyrisk_site'
 )
 
 LOGGING = {
