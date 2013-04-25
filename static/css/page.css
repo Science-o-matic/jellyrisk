@@ -152,3 +152,18 @@ div.cmsplugin.cmsplugin-embeded-pages.embedded-page-for- {
     margin-left: 2ex;
     background: url('../img/medusa-indicador-small.png') no-repeat;
   }
+
+#logout {
+  margin-left: 42px;
+  font-weight: bold;
+}
+
+  #logout a {
+    color: #4dc5d9;
+    text-decoration: none;
+  }
+
+  #logout a:visited {
+    color: #4dc5d9;
+    text-decoration: none;
+  }
