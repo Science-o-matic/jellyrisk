@@ -15,3 +15,5 @@ recaptcha-client
 cmsplugin-contact
 imagestore
 git+https://github.com/ygneo/django-cms-storelocator.git
+git+https://github.com/toastdriven/django-haystack.git@master#egg=django-haystack
+whoosh
