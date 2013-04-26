@@ -28,11 +28,7 @@
          {% show_menu 0 100 0 100%}
         </ul>
       </div>
-      <div id="logout">
-        {% if user.is_authenticated %}
-          <a href="/admin/logout/?next={% page_url request.current_page.parent %}">Logout</a>
-        {% endif %}
-      </div>
+      {% include "logout.html" %}
       </div>
 
 {% endblock %}
