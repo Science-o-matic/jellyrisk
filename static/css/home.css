@@ -179,3 +179,19 @@ body {
   font-size: 120%;
   width: 95%;
 }
+
+#logout {
+  font-weight: bold;
+  text-align: right;
+  margin-right: 37px;
+}
+
+  #logout a {
+    color: #4dc5d9;
+    text-decoration: none;
+  }
+
+  #logout a:visited {
+    color: #4dc5d9;
+    text-decoration: none;
+  }

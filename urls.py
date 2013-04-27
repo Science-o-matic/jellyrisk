@@ -11,6 +11,7 @@ urlpatterns = patterns('',
         {'url': settings.STATIC_URL + 'img/favicon.ico'}),
     url(r'^gallery/', include('imagestore.urls', namespace='imagestore')),
     url(r'^store-locator/', include('store_locator.urls')),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^search/', include('haystack.urls')),
     url(r'^', include('cms.urls')),
 )
