@@ -2,6 +2,6 @@
 
 <div id="logout">
   {% if user.is_authenticated %}
-    <a href="/admin/logout/?next={% page_url request.current_page.parent %}">Logout</a>
+    <a href="accounts/logout/?next={% page_url request.current_page.parent %}">Logout</a>
   {% endif %}
 </div>
