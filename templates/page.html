@@ -1,4 +1,3 @@
-
 {% extends "base.html" %}
 {% load cms_tags menu_tags sekizai_tags %}
 
@@ -22,13 +21,13 @@
       {% endblock %}
     </div>
    </div>
-      <div id="left">
-       <div id="dynamic_menu">
-        <ul id="nav">
+   <div id="left">
+     <div id="dynamic_menu">
+       <ul id="nav">
          {% show_menu 0 100 0 100%}
-        </ul>
-      </div>
-      {% include "logout.html" %}
-      </div>
+       </ul>
+     </div>
+     {% include "logout.html" %}
+   </div>
 
 {% endblock %}
