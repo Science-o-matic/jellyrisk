@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.conf import settings
 from django.utils.translation import string_concat, ugettext_lazy
 from haystack import indexes
@@ -34,15 +35,20 @@ class EnglishPageIndex(indexes.SearchIndex, indexes.Indexable):
         return Page
 
     def prepare(self, obj):
-         self.prepared_data = super(EnglishPageIndex, self).prepare(obj)
-         text = ''
-         for placeholder in obj.placeholders.all():
-             for plugin in placeholder.cmsplugin_set.all():
-                 instance, _ = plugin.get_plugin_instance()
-                 if instance and instance.plugin_type == 'TextPlugin':
-                     text += " %s" % (strip_tags(instance.body))
-         self.prepared_data['text'] = text
-         return self.prepared_data
+        # TODO Solve me in a more elegant way
+        # HOTFIX django cms doesn't give a default value to publication_date,
+        # neither allowing null values
+        if obj.publication_date is None:
+            obj.publication_date = datetime.now()
+        self.prepared_data = super(EnglishPageIndex, self).prepare(obj)
+        text = ''
+        for placeholder in obj.placeholders.all():
+            for plugin in placeholder.cmsplugin_set.all():
+                instance, _ = plugin.get_plugin_instance()
+                if instance and instance.plugin_type == 'TextPlugin':
+                    text += " %s" % (strip_tags(instance.body))
+        self.prepared_data['text'] = text
+        return self.prepared_data
 
     def index_queryset(self, using):
         return Page.objects.published().filter(title_set__language=self.lang).distinct()
