@@ -16,7 +16,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-LANGUAGES = [('es', 'en')]
+LANGUAGES = [('es', 'en', 'cat')]
 DEFAULT_LANGUAGE = 0
 
 DATABASES = {
@@ -116,6 +116,7 @@ CMS_HIDE_UNTRANSLATED = True
 LANGUAGES = (
     ('es', gettext('Spanish')),
     ('en', gettext('English')),
+    ('cat', gettext('Catalan')),
 )
 
 IMAGESTORE_SHOW_USER = False
