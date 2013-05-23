@@ -180,6 +180,7 @@ body {
 }
 
 #social_networks {
+  margin: 0 auto 1ex auto;
   background-color: #39B54A;
   padding-left: 9px;
   border-radius: 4px;
