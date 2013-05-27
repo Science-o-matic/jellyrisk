@@ -16,7 +16,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-LANGUAGES = [('es', 'en', 'cat')]
+LANGUAGES = [('en', 'es', 'cat')]
 DEFAULT_LANGUAGE = 0
 
 DATABASES = {
@@ -114,8 +114,8 @@ CMS_TEMPLATES = (
 # i18n and l10n
 CMS_HIDE_UNTRANSLATED = True
 LANGUAGES = (
-    ('es', gettext('Spanish')),
     ('en', gettext('English')),
+    ('es', gettext('Spanish')),
     ('cat', gettext('Catalan')),
 )
 
