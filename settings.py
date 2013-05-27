@@ -21,6 +21,8 @@ DEFAULT_LANGUAGE = 0
 
 CMS_LANGUAGES = (
     ('en', gettext('English')),
+    ('es', gettext('Spanish')),
+    ('cat', gettext('Catalan')),
 )
 
 CMS_FRONTEND_LANGUAGES = ("en")
