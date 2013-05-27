@@ -16,7 +16,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-LANGUAGES = [('en', 'es', 'cat')]
+LANGUAGES = [('en')]
 DEFAULT_LANGUAGE = 0
 
 CMS_LANGUAGES = (
