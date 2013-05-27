@@ -16,16 +16,14 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-LANGUAGES = [('en')]
-DEFAULT_LANGUAGE = 'en'
+LANGUAGES = [('en'), ('es'), ('cat')]
+DEFAULT_LANGUAGE = 0
 
 CMS_LANGUAGES = (
     ('en', gettext('English')),
     ('es', gettext('Spanish')),
     ('cat', gettext('Catalan')),
 )
-
-CMS_FRONTEND_LANGUAGES = 'en'
 
 DATABASES = {
     'default': {
