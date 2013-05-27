@@ -19,6 +19,12 @@ MANAGERS = ADMINS
 LANGUAGES = [('en', 'es', 'cat')]
 DEFAULT_LANGUAGE = 0
 
+CMS_LANGUAGES = (
+    ('en', gettext('English')),
+)
+
+CMS_FRONTEND_LANGUAGES = ("en")
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
