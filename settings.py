@@ -16,7 +16,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-LANGUAGES = [('en', 'es', 'cat')]
+LANGUAGES = [('en')]
 DEFAULT_LANGUAGE = 'en'
 
 CMS_LANGUAGES = (
@@ -45,7 +45,7 @@ TIME_ZONE = 'Europe/Madrid'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'es-ES'
+LANGUAGE_CODE = 'en'
 
 SITE_ID = 1
 
