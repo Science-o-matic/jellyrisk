@@ -16,13 +16,13 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-LANGUAGES = [('en'), ('es'), ('cat')]
+LANGUAGES = [('en'), ('es'), ('ca')]
 DEFAULT_LANGUAGE = 0
 
 CMS_LANGUAGES = (
     ('en', gettext('English')),
     ('es', gettext('Spanish')),
-    ('cat', gettext('Catalan')),
+    ('ca', gettext('Catalan')),
 )
 
 DATABASES = {
@@ -117,15 +117,7 @@ CMS_TEMPLATES = (
     ('contact_left_picture.html', 'Contact - Left picture'),
 )
 
-# i18n and l10n
 CMS_HIDE_UNTRANSLATED = True
-LANGUAGES = (
-    ('en', gettext('English')),
-    ('es', gettext('Spanish')),
-    ('cat', gettext('Catalan')),
-)
-
-IMAGESTORE_SHOW_USER = False
 
 CMS_PLACEHOLDER_CONF = {
     'new-image-1': {
@@ -145,6 +137,8 @@ CMS_PLACEHOLDER_CONF = {
         'name':gettext("New #2 Text"),
     },
 }
+
+IMAGESTORE_SHOW_USER = False
 
 ROOT_URLCONF = 'urls'
 
@@ -180,6 +174,8 @@ INSTALLED_APPS = (
     'jellyrisk_site'
 )
 
+LOGFILE = '/var/log/jellyrisk/jellyrisk.log'
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
@@ -204,7 +200,7 @@ LOGGING = {
         'logfile': {
             'level':'DEBUG',
             'class':'logging.handlers.RotatingFileHandler',
-            'filename': PROJECT_DIR + "/logfile",
+            'filename': LOGFILE,
             'maxBytes': 50000,
             'backupCount': 2,
             'formatter': 'verbose',
