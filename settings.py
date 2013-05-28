@@ -16,7 +16,11 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-LANGUAGES = [('en'), ('es'), ('ca')]
+LANGUAGES = (
+    ('en', gettext('English')),
+    ('es', gettext('Spanish')),
+    ('ca', gettext('Catalan')),
+)
 DEFAULT_LANGUAGE = 0
 
 CMS_LANGUAGES = (
@@ -176,6 +180,12 @@ INSTALLED_APPS = (
 
 LOGFILE = '/var/log/jellyrisk/jellyrisk.log'
 
+try:
+    from local_settings import *
+except ImportError:
+    pass
+
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
@@ -232,8 +242,3 @@ HAYSTACK_CONNECTIONS = {
 }
 
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
-
-try:
-    from local_settings import *
-except ImportError:
-    pass
