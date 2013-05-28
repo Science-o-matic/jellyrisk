@@ -29,6 +29,8 @@ CMS_LANGUAGES = (
     ('ca', gettext('Catalan')),
 )
 
+CMS_FRONTEND_LANGUAGES = ("en", "ca")
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

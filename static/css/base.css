@@ -64,7 +64,6 @@ border-radius: 10px;
 #language_chooser {
    color: #39b54a; 
    font-size: 80%;
-   position: absolute;
    background-color: white;
    color: green;
    padding: .5ex;
@@ -86,9 +85,9 @@ border-radius: 10px;
 }
 
 #language {
-  display: none;
-	float: right; 
-  width: 718px; 
+	float: left; 
+  width: 1000px;
+  margin: auto auto 0 auto;
 }
 
 #language_chooser a { 
