@@ -8,5 +8,4 @@ cms_page_media/
 fab_settings.py
 .mysqldump_cnf
 *.sql
-logfile
 whoosh_index/
