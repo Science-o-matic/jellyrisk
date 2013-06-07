@@ -180,13 +180,12 @@ INSTALLED_APPS = (
     'jellyrisk_site'
 )
 
-LOGFILE = '/var/log/jellyrisk/jellyrisk.log'
+LOGFILE = os.path.join(PROJECT_DIR, "logfile.log")
 
 try:
     from local_settings import *
 except ImportError:
     pass
-
 
 LOGGING = {
     'version': 1,
@@ -219,8 +218,14 @@ LOGGING = {
         },
         'mail_admins': {
             'level': 'ERROR',
+            'filters': ['require_debug_false'],
             'class': 'django.utils.log.AdminEmailHandler',
         }
+    },
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'
+            }
     },
     'loggers': {
         'django': {
@@ -231,7 +236,7 @@ LOGGING = {
         'django.request': {
             'handlers': ['mail_admins'],
             'level': 'ERROR',
-            'propagate': False,
+            'propagate': True,
         },
     }
 }
