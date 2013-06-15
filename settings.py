@@ -177,7 +177,8 @@ INSTALLED_APPS = (
     'imagestore.imagestore_cms',
     'store_locator',
     'haystack',
-    'jellyrisk_site'
+    'jellyrisk_site',
+    'tinymce',
 )
 
 LOGFILE = os.path.join(PROJECT_DIR, "logfile.log")
