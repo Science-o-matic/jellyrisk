@@ -14,6 +14,7 @@ urlpatterns = patterns('',
     url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^search/', include('haystack.urls')),
     url(r'^', include('cms.urls')),
+    (r'^tinymce/', include('tinymce.urls')),
 )
 
 if settings.DEBUG:
