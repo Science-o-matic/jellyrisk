@@ -121,6 +121,8 @@ CMS_TEMPLATES = (
     ('new.html', 'Single News Template'),
     ('contact_right_picture.html', 'Contact - Right picture'),
     ('contact_left_picture.html', 'Contact - Left picture'),
+    ('two_columns.html', 'Two columns content'),
+    ('three_columns.html', 'Three columns content'),
 )
 
 CMS_HIDE_UNTRANSLATED = True
