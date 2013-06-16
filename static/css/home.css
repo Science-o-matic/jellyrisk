@@ -193,6 +193,32 @@ body {
     padding-left: 3px;
   }
 
+#sting_protocol {
+  margin: 0 auto 1ex auto;
+  background-color: #39B54A;
+  padding-left: 9px;
+  border-radius: 4px;
+  margin-top: 1ex;
+  color: white;
+}
+
+  #sting_protocol p.plugin_file {
+    margin: 0;
+  }
+
+    #sting_protocol p.plugin_file a {
+      text-decoration: none;
+    }
+
+      #sting_protocol p.plugin_file a span.filetitle {
+        color: white;
+        font-weight: bold;
+      }
+
+    .filesize {
+      display: none;
+    }
+
 #more_news {
   text-align:right;
   color: #39B54A;
