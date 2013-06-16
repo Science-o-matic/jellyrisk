@@ -125,3 +125,7 @@ border-radius: 10px;
     color: #4dc5d9;
     text-decoration: none;
   }
+
+p.plugin_file a img {
+  display: none;
+}
