@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags sekizai_tags %}
+
+{% block base_content %}
+    {% addtoblock "css" %}
+      <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
+      <link rel="stylesheet" href="{{ STATIC_URL }}css/page.css">
+      <link rel="stylesheet" href="{{ STATIC_URL }}css/gallery.css">
+      <link rel="stylesheet" href="{{ STATIC_URL }}css/three_columns.css">
+    {% endaddtoblock %}
+
+   <div id="right">
+     <div id="page_header" align="center">
+      {% placeholder "header_image" %}
+    </div>
+
+    <div id="page_wrapper">
+      {% block page_content %}
+      <div id="page_content">
+        {% placeholder base_content %}
+        <div id="left_column">
+          {% placeholder left_content %}
+        </div>
+        <div id="middle_column">
+          {% placeholder middle_content %}
+        </div>
+        <div id="right_column">
+          {% placeholder right_content %}
+        </div>
+      </div>
+      {% endblock %}
+    </div>
+   </div>
+   <div id="left">
+     <div id="dynamic_menu">
+       <ul id="nav">
+         {% show_menu 0 100 0 100%}
+       </ul>
+     </div>
+     {% include "logout.html" %}
+      <div id="sighting">
+        {% placeholder "sighting" %}
+      </div>
+   </div>
+
+{% endblock %}
