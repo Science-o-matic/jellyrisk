@@ -134,13 +134,17 @@ div.cmsplugin.cmsplugin-embeded-pages.embedded-page-for- {
   }
 
 .plugin_file a {
-  background: url('../img/medusa-indicador-small.png') no-repeat;
+  text-align: center;
   background-position: left;
   display: block;
-  padding-left: 3ex;
-  margin-left: 2ex;
+  padding: 0;
+  margin: 0;
   color: #4dc5d9;
 }
+
+  .filesize {
+    display: none;
+  }
 
 .plugin_link {
   display: block;
