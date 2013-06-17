@@ -29,7 +29,7 @@ CMS_LANGUAGES = (
     ('ca', gettext(u'Català')),
 )
 
-CMS_FRONTEND_LANGUAGES = ("en", "ca")
+CMS_FRONTEND_LANGUAGES = ("en", "ca", "es")
 
 DATABASES = {
     'default': {
