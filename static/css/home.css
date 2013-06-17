@@ -219,6 +219,10 @@ body {
       display: none;
     }
 
+#special_news_text p.plugin_file a {
+  text-decoration: none;
+}
+
 #special_news_text p.plugin_file a span.filetitle {
   color: white;
   font-weight: bold;
