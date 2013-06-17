@@ -18,8 +18,8 @@ MANAGERS = ADMINS
 
 LANGUAGES = (
     ('en', gettext('English')),
-    ('es', gettext('Español')),
-    ('ca', gettext('Català')),
+    ('es', gettext('Spanish')),
+    ('ca', gettext('Catalan')),
 )
 DEFAULT_LANGUAGE = 0
 
