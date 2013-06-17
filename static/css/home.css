@@ -219,6 +219,11 @@ body {
       display: none;
     }
 
+#special_news_text p.plugin_file a span.filetitle {
+  color: white;
+  font-weight: bold;
+}
+
 #more_news {
   text-align:right;
   color: #39B54A;
