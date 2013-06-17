@@ -18,15 +18,15 @@ MANAGERS = ADMINS
 
 LANGUAGES = (
     ('en', gettext('English')),
-    ('es', gettext('Spanish')),
-    ('ca', gettext('Catalan')),
+    ('es', gettext(u'Español')),
+    ('ca', gettext(u'Català')),
 )
 DEFAULT_LANGUAGE = 0
 
 CMS_LANGUAGES = (
     ('en', gettext('English')),
-    ('es', gettext('Spanish')),
-    ('ca', gettext('Catalan')),
+    ('es', gettext(u'Español')),
+    ('ca', gettext(u'Català')),
 )
 
 CMS_FRONTEND_LANGUAGES = ("en", "ca")
