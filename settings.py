@@ -21,6 +21,9 @@ LANGUAGES = (
     ('es', gettext(u'Español')),
     ('ca', gettext(u'Català')),
     ('mt', gettext('Maltese')),
+    ('it', gettext('Italiano')),
+    ('fr', gettext(u'Français')),
+    ('ar', gettext('Arabic')),
 )
 DEFAULT_LANGUAGE = 0
 
@@ -29,6 +32,9 @@ CMS_LANGUAGES = (
     ('es', gettext(u'Español')),
     ('ca', gettext(u'Català')),
     ('mt', gettext('Meltese')),
+    ('it', gettext('Italiano')),
+    ('fr', gettext(u'Français')),
+    ('ar', gettext('Arabic')),
 )
 
 CMS_FRONTEND_LANGUAGES = ("en", "ca", "es")
