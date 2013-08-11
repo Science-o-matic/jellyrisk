@@ -10,8 +10,7 @@ TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     ('Martín Fuentes', 'fuentesmartin@gmail.com'),
-    ('Javi Fuentes', 'fuentesmartin@gmail.com'),
-    ('Javi Fuentes', 'jfuentess@gmail.com'),
+    ('Javi Fuentes', 'jfuentess@gmail.com')
 )
 
 MANAGERS = ADMINS
@@ -31,7 +30,7 @@ CMS_LANGUAGES = (
     ('en', gettext('English')),
     ('es', gettext(u'Español')),
     ('ca', gettext(u'Català')),
-    ('mt', gettext('Meltese')),
+    ('mt', gettext('Maltese')),
     ('it', gettext('Italiano')),
     ('fr', gettext(u'Français')),
     ('ar', gettext('Arabic')),
