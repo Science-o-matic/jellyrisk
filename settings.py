@@ -31,13 +31,13 @@ CMS_LANGUAGES = (
     ('en', gettext('English')),
     ('es', gettext(u'Español')),
     ('ca', gettext(u'Català')),
-    ('mt', gettext('Meltese')),
+    ('mt', gettext('Maltese')),
     ('it', gettext('Italiano')),
     ('fr', gettext(u'Français')),
     ('ar', gettext('Arabic')),
 )
 
-CMS_FRONTEND_LANGUAGES = ("en", "ca", "es")
+CMS_FRONTEND_LANGUAGES = ("en", "ca", "es", "mt")
 
 DATABASES = {
     'default': {
