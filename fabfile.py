@@ -21,7 +21,7 @@ env['project_media_dir'] = '/var/www/jellyrisk/media/'
 @roles('jellyrisk')
 def git_status():
     with cd(env['project_path']):
-        run('git fetch && git status') 
+        run('git fetch && git status')
 
 
 @roles('jellyrisk')
@@ -29,19 +29,19 @@ def pushpull():
     local("git push origin master")
     with settings(user='jellyrisk'):
         with cd(env['project_path']):
-            run('git pull') 
+            run('git pull')
 
 
 @roles('sudoer')
 def reloadapp():
     sudo('supervisorctl restart jellyrisk', shell=False)
-    sudo('service nginx reload', shell=False) 
+    sudo('service nginx reload', shell=False)
 
 
 @roles('jellyrisk')
 def release(run_migrate=True, static=True):
     pushpull()
-    run('%s install -r %spip-requirements.txt' % 
+    run('%s install -r %spip-requirements.txt' %
         (env['pip_path'], env['project_path']))
     with cd(env['project_path']):
         if run_migrate:
@@ -66,7 +66,7 @@ def pulldb():
     run('rm %s' % dump_file)
     if confirm("Load dumped remote data into local DB?"):
         local('mysql --defaults-file=".mysqldump_cnf" %s < %s' % (env['project_name'], filename))
-            
+
 
 def _run_manage(command):
     run("%s ./manage.py %s" % (env['python_path'], command))

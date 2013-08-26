@@ -27,17 +27,46 @@ LANGUAGES = (
 )
 DEFAULT_LANGUAGE = 0
 
-CMS_LANGUAGES = (
-    ('en', gettext('English')),
-    ('es', gettext(u'Español')),
-    ('ca', gettext(u'Català')),
-    ('mt', gettext('Maltese')),
-    ('it', gettext('Italiano')),
-    ('fr', gettext(u'Français')),
-    ('ar', gettext('Arabic')),
-)
 
-CMS_FRONTEND_LANGUAGES = ("en", "ca", "es", "mt")
+CMS_LANGUAGES = {
+    1: [
+        {
+            'code': 'en',
+            'name': gettext(u'English'),
+        },
+        {
+            'code': 'es',
+            'name': gettext(u'Español'),
+        },
+        {
+            'code': 'ca',
+            'name': gettext(u'Català'),
+        },
+        {
+            'code': 'it',
+            'name': gettext(u'Italiano'),
+        },
+        {
+            'code': 'fr',
+            'name': gettext(u'Français'),
+        },
+        {
+            'code': 'mt',
+            'name': gettext(u'Maltese'),
+        },
+        {
+            'code': 'ar',
+            'name': gettext(u'Arabic'),
+            'public': False
+        }
+    ],
+    'default': {
+        'fallbacks': ['en', 'es',],
+        'hide_untranslated': True,
+        'redirect_on_fallback': False,
+        'public': True
+        }
+}
 
 DATABASES = {
     'default': {
@@ -101,15 +130,17 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'cms.middleware.multilingual.MultilingualURLMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.doc.XViewMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
+    'cms.middleware.language.LanguageCookieMiddleware'
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -132,8 +163,6 @@ CMS_TEMPLATES = (
     ('two_columns.html', 'Two columns content'),
     ('three_columns.html', 'Three columns content'),
 )
-
-CMS_HIDE_UNTRANSLATED = True
 
 CMS_PLACEHOLDER_CONF = {
     'new-image-1': {
