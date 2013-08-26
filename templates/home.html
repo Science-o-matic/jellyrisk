@@ -71,6 +71,9 @@
           {% ifequal LANGUAGE_CODE  'ca' %}
           <span>{% trans "Segueix-nos a" %}:</span>
           {% endifequal %}
+          {% ifequal LANGUAGE_CODE  'mt' %}
+          <span>{% trans "Segwi us fuq" %}:</span>
+          {% endifequal %}
 
           <a href="https://www.facebook.com/Jellyrisk?ref=tn_tnmn" target="new"><img src="{{ STATIC_URL }}img/facebook.png"/></a>
           <a href="https://twitter.com/jellyrisk" target="new"><img src="{{ STATIC_URL }}img/twitter.png"/></a>
@@ -86,6 +89,9 @@
           {% endifequal %}
           {% ifequal LANGUAGE_CODE  'ca' %}
             <input type="submit" value="{% trans "Cercar" %}"/>
+          {% endifequal %}
+          {% ifequal LANGUAGE_CODE  'mt' %}
+            <input type="submit" value="{% trans "Fittex" %}"/>
           {% endifequal %}
           </form>
         </div>
