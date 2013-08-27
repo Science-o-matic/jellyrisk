@@ -64,7 +64,7 @@ CMS_LANGUAGES = {
     'default': {
         'fallbacks': ['en', 'es',],
         'hide_untranslated': False,
-        'redirect_on_fallback': False
+        'redirect_on_fallback': False,
         'public': True
         }
 }
