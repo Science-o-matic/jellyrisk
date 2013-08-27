@@ -43,10 +43,12 @@ CMS_LANGUAGES = {
         {
             'code': 'it',
             'name': gettext(u'Italiano'),
+            'public': False
         },
         {
             'code': 'fr',
             'name': gettext(u'Français'),
+            'public': False
         },
         {
             'code': 'mt',
@@ -61,8 +63,8 @@ CMS_LANGUAGES = {
     ],
     'default': {
         'fallbacks': ['en', 'es',],
-        'hide_untranslated': True,
-        'redirect_on_fallback': False,
+        'hide_untranslated': False,
+        'redirect_on_fallback': False
         'public': True
         }
 }
