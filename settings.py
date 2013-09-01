@@ -53,7 +53,6 @@ CMS_LANGUAGES = {
         {
             'code': 'mt',
             'name': gettext(u'Maltese'),
-            'public': False
         },
         {
             'code': 'ar',
