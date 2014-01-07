@@ -63,16 +63,22 @@
         </div>
         <div id="social_networks">
           {% ifequal LANGUAGE_CODE  'en' %}
-          <span>{% trans "Follow us on" %}:</span>
+          <span>Follow us on:</span>
           {% endifequal %}
           {% ifequal LANGUAGE_CODE  'es' %}
-          <span>{% trans "Síguenos en" %}:</span>
+          <span>Síguenos en:</span>
           {% endifequal %}
           {% ifequal LANGUAGE_CODE  'ca' %}
-          <span>{% trans "Segueix-nos a" %}:</span>
+          <span>Segueix-nos a:</span>
           {% endifequal %}
           {% ifequal LANGUAGE_CODE  'mt' %}
-          <span>{% trans "Segwi us fuq" %}:</span>
+          <span>Segwi us fuq:</span>
+          {% endifequal %}
+          {% ifequal LANGUAGE_CODE  'fr' %}
+          <span>Suivez-nous sur:</span>
+          {% endifequal %}
+          {% ifequal LANGUAGE_CODE  'ar' %}
+          <span>تابعونا على</span>
           {% endifequal %}
 
           <a href="https://www.facebook.com/Jellyrisk?ref=tn_tnmn" target="new"><img src="{{ STATIC_URL }}img/facebook.png"/></a>
@@ -82,16 +88,22 @@
           <form method="get" action="/search">
             <input type="text" name="q" value""/>
           {% ifequal LANGUAGE_CODE  'en' %}
-            <input type="submit" value="{% trans "Search" %}"/>
+            <input type="submit" value="Search"/>
           {% endifequal %}
           {% ifequal LANGUAGE_CODE  'es' %}
-            <input type="submit" value="{% trans "Buscar" %}"/>
+            <input type="submit" value="Buscar"/>
           {% endifequal %}
           {% ifequal LANGUAGE_CODE  'ca' %}
-            <input type="submit" value="{% trans "Cercar" %}"/>
+            <input type="submit" value="Cercar"/>
           {% endifequal %}
           {% ifequal LANGUAGE_CODE  'mt' %}
-            <input type="submit" value="{% trans "Fittex" %}"/>
+            <input type="submit" value="Fittex"/>
+          {% endifequal %}
+          {% ifequal LANGUAGE_CODE  'fr' %}
+            <input type="submit" value="Recherche"/>
+          {% endifequal %}
+          {% ifequal LANGUAGE_CODE  'ar' %}
+            <input type="submit" value="بحث"/>
           {% endifequal %}
           </form>
         </div>
