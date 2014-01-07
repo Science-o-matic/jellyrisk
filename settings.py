@@ -48,7 +48,6 @@ CMS_LANGUAGES = {
         {
             'code': 'fr',
             'name': gettext(u'Français'),
-            'public': False
         },
         {
             'code': 'mt',
@@ -57,7 +56,6 @@ CMS_LANGUAGES = {
         {
             'code': 'ar',
             'name': gettext(u'Arabic'),
-            'public': False
         }
     ],
     'default': {
