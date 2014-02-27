@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+g# -*- coding: utf-8 -*-
 import os
 
 gettext = lambda s: s

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n sekizai_tags %}
+
+{% block base_content %}
+  {% addtoblock "css" %}
+  <link rel="stylesheet" href="{{ STATIC_URL }}css/page.css">
+  {% endaddtoblock %}
+
+  <div id="page_content">
+  <h2>{% trans "404 error" %}</h2>
+  <p>{% trans "The page your trying to access is either unpublished, or it has been deleted." %}</p>
+  <p>{% trans "Sorry for the inconvenience. You can try again going to" %}
+    <a href="/">{% trans "home page" %}</p>
+  </div>
+{% endblock %}
