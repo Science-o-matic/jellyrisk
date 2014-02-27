@@ -8,6 +8,8 @@ admin.autodiscover()
 
 urlpatterns = i18n_patterns('',
     url(r'^admin/', include(admin.site.urls)),
+    (r'^succesfully_loggged_out/$', 'django.views.generic.simple.direct_to_template',
+     {'template': 'registration/successfully_logged_out.html'}),
     url(r'^', include('cms.urls')),
 )
 
