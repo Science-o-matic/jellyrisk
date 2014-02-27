@@ -1,0 +1,13 @@
+{% extends "page.html" %}
+{% load cms_tags menu_tags sekizai_tags i18n %}
+
+{% block page_content %}
+<div id="page_content">
+  <form method="post" action="" id="register-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="{% trans 'Register' %}" />
+    <input type="hidden" name="next" value="{{ next }}" />
+  </form>
+</div>
+{% endblock %}

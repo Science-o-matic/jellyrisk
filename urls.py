@@ -21,6 +21,7 @@ urlpatterns += patterns('',
     url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^search/', include('haystack.urls')),
     (r'^tinymce/', include('tinymce.urls')),
+    (r'^accounts/', include('registration.backends.default.urls')),
 )
 
 if settings.DEBUG:

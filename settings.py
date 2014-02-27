@@ -154,6 +154,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 CMS_TEMPLATES = (
     ('home.html', 'Home Template'),
     ('page.html', 'Page Template'),
+    ('registration/registration.html', 'Registration Template'),
     ('map_page.html', 'Map Page Template'),
     ('new.html', 'Single News Template'),
     ('contact_right_picture.html', 'Contact - Right picture'),
@@ -220,12 +221,17 @@ INSTALLED_APPS = (
     'registration'
 )
 
+ACCOUNT_ACTIVATION_DAYS = 7
+
 LOGFILE = os.path.join(PROJECT_DIR, "logfile.log")
 
 try:
     from local_settings import *
 except ImportError:
     pass
+
+if DEBUG:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 LOGGING = {
     'version': 1,
