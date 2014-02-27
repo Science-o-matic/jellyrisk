@@ -150,3 +150,7 @@ span#register_link {
 #register a:visited {
     color: white;
 }
+
+#share {
+  margin-top: 1ex;
+}
