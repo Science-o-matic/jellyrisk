@@ -8,6 +8,18 @@ class UserProfile(models.Model):
     recieve_newsletter = models.BooleanField(default=True, null=False, blank=False)
     participate_in_contest = models.BooleanField(default=False, null=False, blank=False)
 
+    def is_staff(self):
+        return bool(self.user.is_staff)
+
+    def email(self):
+        return self.user.email
+
+    def name(self):
+        return self.user.name
+
+    def surname(self):
+        return self.user.surname
+
     def __unicode__(self):
         return unicode(self.user)
 
