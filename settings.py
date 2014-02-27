@@ -154,6 +154,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 CMS_TEMPLATES = (
     ('home.html', 'Home Template'),
     ('page.html', 'Page Template'),
+    ('registration/registration.html', 'Registration Template'),
     ('map_page.html', 'Map Page Template'),
     ('new.html', 'Single News Template'),
     ('contact_right_picture.html', 'Contact - Right picture'),
@@ -206,6 +207,7 @@ INSTALLED_APPS = (
     'sekizai',
     'django_extensions',
     'cmsplugin_embeddedpages',
+    'cms.plugins.inherit',
     'filer',
     'cmsplugin_contact',
     'imagestore',
@@ -216,7 +218,12 @@ INSTALLED_APPS = (
     'haystack',
     'jellyrisk_site',
     'tinymce',
+    'registration',
+    'accounts'
 )
+
+ACCOUNT_ACTIVATION_DAYS = 7
+AUTH_PROFILE_MODULE = 'accounts.models.UserProfile'
 
 LOGFILE = os.path.join(PROJECT_DIR, "logfile.log")
 
@@ -224,6 +231,9 @@ try:
     from local_settings import *
 except ImportError:
     pass
+
+if DEBUG:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 LOGGING = {
     'version': 1,
