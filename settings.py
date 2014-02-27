@@ -217,6 +217,7 @@ INSTALLED_APPS = (
     'haystack',
     'jellyrisk_site',
     'tinymce',
+    'registration'
 )
 
 LOGFILE = os.path.join(PROJECT_DIR, "logfile.log")
