@@ -1,6 +1,8 @@
 {% load i18n %}
 
 <div id="register">
-  <a href="/accounts/register">{% trans "Register your user account" %}</a>
+  <span id="register_link">
+    <a href="/accounts/register">{% trans "Register" %}</a> {% trans "your user account" %}
+  </span>
   <p>{% trans "You will recieve our newsletter and you can participate in our photo shooting contest." %}</p>
 </div>
