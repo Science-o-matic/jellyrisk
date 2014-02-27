@@ -2,6 +2,7 @@
 {% load cms_tags menu_tags sekizai_tags i18n %}
 
 {% block page_content %}
+<h2{% trans ">Register your user account" %}</h2>
 <div id="page_content">
   <form method="post" action="" id="register-form">
     {% csrf_token %}

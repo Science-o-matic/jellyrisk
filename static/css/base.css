@@ -43,13 +43,13 @@ border-radius: 10px;
     }
 
   #dynamic_menu ul li a {
-    color: #4dc5d9; 
+    color: #4dc5d9;
     text-decoration: none;
     font-size: 110%;
   }
 
     #dynamic_menu ul li a:visited {
-      color: #4dc5d9; 
+      color: #4dc5d9;
     }
     #dynamic_menu ul#nav {
       margin: 0;
@@ -62,12 +62,12 @@ border-radius: 10px;
 }
 
 #language_chooser {
-   color: #39b54a; 
+   color: #39b54a;
    font-size: 80%;
    background-color: white;
    color: green;
    padding: .5ex;
-   padding-right: 1ex;        
+   padding-right: 1ex;
    padding-left: 1ex;
    -moz-border-radius-bottomright: 4px;
    border-bottom-right-radius: 4px;
@@ -85,12 +85,12 @@ border-radius: 10px;
 }
 
 #language {
-	float: left; 
+    float: left;
   width: 1000px;
   margin: auto auto 0 auto;
 }
 
-#language_chooser a { 
+#language_chooser a {
    color: #39b54a;
 }
 
@@ -120,7 +120,7 @@ border-radius: 10px;
     color: #4dc5d9;
     text-decoration: none;
   }
-  
+
   #logout a:visited {
     color: #4dc5d9;
     text-decoration: none;
@@ -128,4 +128,25 @@ border-radius: 10px;
 
 p.plugin_file a img {
   display: none;
+}
+
+#register {
+    margin-top: 2ex;
+    padding: 1.5ex;
+    background-color: #39b54a;
+    color: white;
+    border-radius: 4px;
+    font-size: small;
+}
+
+span#register_link {
+    font-size: 120%;
+}
+
+#register a {
+    color: white;
+}
+
+#register a:visited {
+    color: white;
 }

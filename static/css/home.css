@@ -252,22 +252,6 @@ body {
     text-decoration: none;
   }
 
-#register {
-    margin-top: 2ex;
-    padding: 1.5ex;
-    background-color: #39b54a;
-    color: white;
-    border-radius: 4px;
-}
-
-span#register_link {
-    font-size: 120%;
-}
-
-#register a {
-    color: white;
-}
-
-#register a:visited {
-    color: white;
+#share {
+      margin-top: 1ex;
 }
