@@ -206,6 +206,7 @@ INSTALLED_APPS = (
     'sekizai',
     'django_extensions',
     'cmsplugin_embeddedpages',
+    'cms.plugins.inherit',
     'filer',
     'cmsplugin_contact',
     'imagestore',
