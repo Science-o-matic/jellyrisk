@@ -218,10 +218,12 @@ INSTALLED_APPS = (
     'haystack',
     'jellyrisk_site',
     'tinymce',
-    'registration'
+    'registration',
+    'accounts'
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7
+AUTH_PROFILE_MODULE = 'accounts.models.UserProfile'
 
 LOGFILE = os.path.join(PROJECT_DIR, "logfile.log")
 
