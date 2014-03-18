@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-27 01:07+0100\n"
+"POT-Creation-Date: 2014-03-18 12:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,19 +47,19 @@ msgstr ""
 msgid "Arabic"
 msgstr ""
 
-#: settings.py:168
+#: settings.py:169
 msgid "New #1 Picture"
 msgstr ""
 
-#: settings.py:172
+#: settings.py:173
 msgid "New #1 Text"
 msgstr ""
 
-#: settings.py:176
+#: settings.py:177
 msgid "New #2 Picture"
 msgstr ""
 
-#: settings.py:180
+#: settings.py:181
 msgid "New #2 Text"
 msgstr ""
 
@@ -86,9 +86,70 @@ msgstr ""
 
 #: templates/500.html:11
 msgid ""
-"A server error has occur. People on charge of the site has been repoted."
+"A server error has occurred. People in charge of the site has been repoted."
 msgstr ""
 
-#: templates/registration/login.html:18
+#: templates/register.html:5 templates/registration/registration_form.html:10
+msgid "Register"
+msgstr ""
+
+#: templates/register.html:5
+msgid "your user account"
+msgstr ""
+
+#: templates/register.html:7
+msgid ""
+"You will recieve our newsletter and you can participate in our photo "
+"shooting contest."
+msgstr ""
+
+#: templates/registration/activate.html:7
+#, python-format
+msgid ""
+"\n"
+"  The activation key \"%(activation_key)s\" is invalid and cannot be used to "
+"activate this account.\n"
+msgstr ""
+
+#: templates/registration/activation_complete.html:6
+msgid "Your account has been activated correctly."
+msgstr ""
+
+#: templates/registration/activation_email.txt:3
+#, python-format
+msgid ""
+"\n"
+"\n"
+"Welcome to %(site_name)s.\n"
+"\n"
+"Please click here to activate your account: http://%(site)s/accounts/"
+"activate/%(activation_key)s/\n"
+"\n"
+"Account has to be activated within %(expiration_days)s days.\n"
+"\n"
+msgstr ""
+
+#: templates/registration/activation_email_subject.txt:3
+#, python-format
+msgid ""
+"\n"
+"Activate your account in %(site_name)s\n"
+msgstr ""
+
+#: templates/registration/login.html:20
 msgid "Log in"
+msgstr ""
+
+#: templates/registration/registration_complete.html:6
+msgid ""
+"You are almost done to finish your registration. You should recieve an e-"
+"mail to activate your user account."
+msgstr ""
+
+#: templates/registration/registration_form.html:5
+msgid "Register your user account"
+msgstr ""
+
+#: templates/registration/successfully_logged_out.html:6
+msgid "Successfully logged out."
 msgstr ""
