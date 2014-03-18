@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-18 12:30+0100\n"
+"POT-Creation-Date: 2014-03-18 17:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,24 +64,25 @@ msgstr ""
 
 #: accounts/forms.py:9
 msgid "Recieve newsletter"
-msgstr ""
+msgstr "Acepto recibir el newsletter"
 
 #: accounts/forms.py:13
 msgid "Participate in jellyfish photo contest"
-msgstr ""
+msgstr "Quiero participar en el concurso de fotografía de Jellyfish"
 
 #: templates/404.html:10
 msgid "404 error"
-msgstr ""
+msgstr "Error 404"
 
 #: templates/404.html:11
 msgid ""
 "The page your trying to access is either unpublished, or it has been deleted."
 msgstr ""
+"Esta páginas que estás intentando acceder no es pública o ha sido borrada."
 
 #: templates/404.html:12 templates/500.html:12
 msgid "Sorry for the inconvenience. You can try again going to"
-msgstr ""
+msgstr "Disculpa las molestias. Puedes intentarlo de nuevo accediendo a la "
 
 #: templates/404.html:13 templates/500.html:13
 msgid "home page"
@@ -89,38 +90,44 @@ msgstr ""
 
 #: templates/500.html:10
 msgid "500 error"
-msgstr ""
+msgstr "Error 500"
 
 #: templates/500.html:11
 msgid ""
 "A server error has occurred. People in charge of the site has been repoted."
 msgstr ""
+"Ha ocurrido un error en el servidor. Los responsables del sitio web han sido "
+"informados."
 
-#: templates/register.html:5 templates/registration/registration_form.html:10
+#: templates/register.html:5 templates/registration/registration_form.html:20
 msgid "Register"
-msgstr ""
+msgstr "Registra"
 
 #: templates/register.html:5
 msgid "your user account"
-msgstr ""
+msgstr "tu cuenta de usuario"
 
 #: templates/register.html:7
 msgid ""
 "You will recieve our newsletter and you can participate in our photo "
 "shooting contest."
 msgstr ""
+"Recibirás nuestro newsletter y podrás parciticipar en nuestro concurso "
+"fotográfico."
 
 #: templates/registration/activate.html:7
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "  The activation key \"%(activation_key)s\" is invalid and cannot be used to "
 "activate this account.\n"
 msgstr ""
+"La clave de activación \"%(activation_key)s\" es invalida y no puede usarse "
+"para activaresta cuenta.\n"
 
 #: templates/registration/activation_complete.html:6
 msgid "Your account has been activated correctly."
-msgstr ""
+msgstr "Tu cuenta ha sido activada correctamente."
 
 #: templates/registration/activation_email.txt:3
 #, python-format
@@ -135,6 +142,15 @@ msgid ""
 "Account has to be activated within %(expiration_days)s days.\n"
 "\n"
 msgstr ""
+"\n"
+"\n"
+"Bienvenido a %(site_name)s.\n"
+"\n"
+"Por favor haz click aquí para activar tu cuenta: http://%(site)s/accounts/"
+"activate/%(activation_key)s/\n"
+"\n"
+"La cuenta será activada en %(expiration_days)s días.\n"
+"\n"
 
 #: templates/registration/activation_email_subject.txt:3
 #, python-format
@@ -142,21 +158,28 @@ msgid ""
 "\n"
 "Activate your account in %(site_name)s\n"
 msgstr ""
+"\n"
+"Activa tu cuenta en %(site_name)s\n"
+
+#: templates/registration/login.html:13
+msgid "Jellyrisk login"
+msgstr "Acceso a Jellyrish"
 
 #: templates/registration/login.html:20
 msgid "Log in"
-msgstr ""
+msgstr "Acceder"
 
 #: templates/registration/registration_complete.html:6
 msgid ""
 "You are almost done to finish your registration. You should recieve an e-"
 "mail to activate your user account."
-msgstr ""
+msgstr "Estas a un paso de finalizar tu registro. Deberías haber recibdio un e-mail para
+"activar tu cuenta de usuario"
 
-#: templates/registration/registration_form.html:5
+#: templates/registration/registration_form.html:9
 msgid "Register your user account"
-msgstr ""
+msgstr "Registra tu cuenta de usuario"
 
 #: templates/registration/successfully_logged_out.html:6
 msgid "Successfully logged out."
-msgstr ""
+msgstr "Has sido desconectado correctamente."

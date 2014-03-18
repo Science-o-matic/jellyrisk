@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-18 12:30+0100\n"
+"POT-Creation-Date: 2014-03-18 17:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,7 +96,7 @@ msgid ""
 "A server error has occurred. People in charge of the site has been repoted."
 msgstr ""
 
-#: templates/register.html:5 templates/registration/registration_form.html:10
+#: templates/register.html:5 templates/registration/registration_form.html:20
 msgid "Register"
 msgstr ""
 
@@ -143,6 +143,10 @@ msgid ""
 "Activate your account in %(site_name)s\n"
 msgstr ""
 
+#: templates/registration/login.html:13
+msgid "Jellyrisk login"
+msgstr ""
+
 #: templates/registration/login.html:20
 msgid "Log in"
 msgstr ""
@@ -153,7 +157,7 @@ msgid ""
 "mail to activate your user account."
 msgstr ""
 
-#: templates/registration/registration_form.html:5
+#: templates/registration/registration_form.html:9
 msgid "Register your user account"
 msgstr ""
 
