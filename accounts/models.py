@@ -24,7 +24,7 @@ class UserProfile(models.Model):
         return unicode(self.user)
 
 def user_registered_callback(sender, user, request, **kwargs):
-    profile = UserProfile(user = user)
+    profile = UserProfile(user=user)
     profile.recieve_newsletter = bool(request.POST.get("recieve_newsletter", False))
     profile.participate_in_contest = bool(request.POST.get("participate_in_contest", False))
     profile.save()
