@@ -173,7 +173,7 @@ msgstr "Acceder"
 msgid ""
 "You are almost done to finish your registration. You should recieve an e-"
 "mail to activate your user account."
-msgstr "Estas a un paso de finalizar tu registro. Deberías haber recibdio un e-mail para
+msgstr "Estas a un paso de finalizar tu registro. Deberías haber recibdio un e-mail para"
 "activar tu cuenta de usuario"
 
 #: templates/registration/registration_form.html:9
