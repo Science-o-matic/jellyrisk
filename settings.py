@@ -223,7 +223,7 @@ INSTALLED_APPS = (
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7
-AUTH_PROFILE_MODULE = 'accounts.models.UserProfile'
+AUTH_PROFILE_MODULE = 'accounts.UserProfile'
 
 LOGFILE = os.path.join(PROJECT_DIR, "logfile.log")
 
@@ -232,6 +232,8 @@ try:
 except ImportError:
     pass
 
+
+DEFAULT_FROM_EMAIL = 'info@jellyrisk.org'
 if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
