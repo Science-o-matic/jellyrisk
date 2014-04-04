@@ -232,7 +232,7 @@ except ImportError:
     pass
 
 
-DEFAULT_FROM_EMAIL = 'info@jellyrisk.org'
+DEFAULT_FROM_EMAIL = 'info@jellyrisk.eu'
 if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
