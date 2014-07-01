@@ -12,7 +12,7 @@ setuptools
 git+https://github.com/ygneo/cmsplugin-embedded-pages.git
 django-filer
 recaptcha-client==1.0.6
-cmsplugin-contact==1.0.0
+git+https://github.com/maccesch/cmsplugin-contact.git
 imagestore==2.7.3
 git+https://github.com/ygneo/django-cms-storelocator.git
 git+https://github.com/toastdriven/django-haystack.git@master#egg=django-haystack
